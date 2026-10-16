@@ -65,3 +65,67 @@ if (contactForm && successMessage && errorMessage) {
         }
     });
 }
+
+/* ======================================== */
+/* 50. MOBILE & TABLET NAVIGATION           */
+/* ======================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const navigation = document.getElementById("primary-navigation");
+
+    if (!menuToggle || !navigation) return;
+
+    const mobileBreakpoint = window.matchMedia("(max-width: 1024px)");
+
+    function closeMenu() {
+        menuToggle.classList.remove("is-active");
+        navigation.classList.remove("is-open");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+    }
+
+    menuToggle.addEventListener("click", () => {
+
+        const isOpen = navigation.classList.toggle("is-open");
+
+        menuToggle.classList.toggle("is-active", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+
+    });
+
+    // Close menu after selecting a navigation link
+    navigation.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", closeMenu);
+    });
+
+    // Close menu with Escape key
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && navigation.classList.contains("is-open")) {
+            closeMenu();
+            menuToggle.focus();
+        }
+    });
+
+    // Close when clicking outside the navigation
+    document.addEventListener("click", (event) => {
+        if (
+            navigation.classList.contains("is-open") &&
+            !menuToggle.contains(event.target) &&
+            !navigation.contains(event.target)
+        ) {
+            closeMenu();
+        }
+    });
+
+    // Reset menu when returning to desktop width
+    mobileBreakpoint.addEventListener("change", closeMenu);
+
+});

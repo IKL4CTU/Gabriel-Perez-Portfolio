@@ -48,27 +48,75 @@
     <!-- SITE HEADER AND NAVIGATION               -->
     <!-- ======================================== -->
 
-    <header class="site-header">
+   
+<!-- ======================================== -->
+<!-- WEBSITE HEADER & RESPONSIVE NAVIGATION  -->
+<!-- ======================================== -->
 
-        <nav class="navbar" aria-label="Main navigation">
+<header class="site-header">
 
-            <!-- Personal Brand -->
-            <a href="#home" class="brand">
-                Gabriel J. Perez<span class="brand-dot">.</span>
-            </a>
+    <nav class="navbar" aria-label="Main navigation">
 
-            <!-- Navigation Links -->
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#work">My Work</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <!-- ======================================== -->
+        <!-- PERSONAL BRAND                           -->
+        <!-- ======================================== -->
 
-        </nav>
+        <a href="#home" class="brand">
+            Gabriel J. Perez<span class="brand-dot">.</span>
+        </a>
 
-    </header>
+        <!-- ======================================== -->
+        <!-- MOBILE & TABLET HAMBURGER BUTTON         -->
+        <!-- ======================================== -->
+
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="primary-navigation"
+            aria-expanded="false">
+
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+
+        </button>
+
+        <!-- ======================================== -->
+        <!-- MAIN NAVIGATION LINKS                    -->
+        <!-- ======================================== -->
+
+        <ul
+            class="nav-links"
+            id="primary-navigation">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#work">My Work</a>
+            </li>
+
+            <li>
+                <a href="#services">Services</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
 
     <!-- ======================================== -->
     <!-- MAIN PAGE CONTENT                        -->
@@ -695,21 +743,16 @@
                             respond to your project request.
                         </p>
 
-<!-- ======================================== -->
-<!-- CONTACT FORM ERROR MESSAGE              -->
-<!-- ======================================== -->
+                        <!-- ======================================== -->
+                        <!-- CONTACT FORM ERROR MESSAGE              -->
+                        <!-- ======================================== -->
 
-<p
-    id="contact-error"
-    class="contact-error"
-    role="alert"
-    hidden>
+                        <p id="contact-error" class="contact-error" role="alert" hidden>
 
-    Your message could not be sent.
-    Please try again, or contact me directly by email.
+                            Your message could not be sent.
+                            Please try again, or contact me directly by email.
 
-</p>
-
+                        </p>
 
                     </form>
 

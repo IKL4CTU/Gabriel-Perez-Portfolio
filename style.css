@@ -1707,3 +1707,145 @@ button:focus-visible {
         padding: 45px 24px;
     }
 }
+
+/* ======================================== */
+/* 49. RESPONSIVE NAVIGATION MENU           */
+/* ======================================== */
+
+/* Hamburger hidden on desktop */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 12px;
+}
+
+/* Hamburger bars */
+
+.menu-bar {
+    display: block;
+    width: 26px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: var(--white);
+    border-radius: 3px;
+    transition: transform 0.3s ease,
+                opacity 0.3s ease;
+}
+
+/* ======================================== */
+/* TABLET & MOBILE NAVIGATION               */
+/* ======================================== */
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .menu-toggle {
+        display: block;
+        flex-shrink: 0;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        margin: 0;
+        padding: 15px 20px;
+
+        background-color: var(--navy);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 0 0 8px 8px;
+
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .nav-links.is-open {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        list-style: none;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 15px 12px;
+        font-size: 1rem;
+    }
+
+    /* Hamburger transforms into X */
+
+    .menu-toggle.is-active .menu-bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.is-active .menu-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.is-active .menu-bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+/* ======================================== */
+/* SMALL PHONE ADJUSTMENTS                  */
+/* ======================================== */
+
+@media (max-width: 480px) {
+
+    .menu-toggle {
+        padding: 10px;
+    }
+
+    .nav-links a {
+        padding: 17px 12px;
+    }
+
+}
+
+/* ======================================== */
+/* 51. MOBILE & TABLET HEADER ALIGNMENT     */
+/* ======================================== */
+
+@media (max-width: 1024px) {
+
+    .site-header .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .site-header .brand {
+        margin: 0;
+        text-align: left;
+    }
+
+    .site-header .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+}
