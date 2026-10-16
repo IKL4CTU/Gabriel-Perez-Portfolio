@@ -1,0 +1,739 @@
+
+/* ======================================== */
+/* GABRIEL J. PEREZ                         */
+/* WEB DESIGN & DEVELOPMENT PORTFOLIO       */
+/* GLOBAL STYLES AND DESIGN SYSTEM          */
+/* ======================================== */
+
+
+/* ======================================== */
+/* 1. COLOR PALETTE AND DESIGN VARIABLES    */
+/* ======================================== */
+
+:root {
+
+    /* Primary Background Colors */
+    --navy: #101C2B;
+    --navy-light: #192A3D;
+    --ivory: #F8F7F3;
+    --white: #FFFFFF;
+
+    /* Brand Accent Colors */
+    --accent-blue: #3976A8;
+    --accent-blue-light: #6AA5D4;
+    --champagne: #C8A978;
+
+    /* Text Colors */
+    --text-dark: #243244;
+    --text-light: #F8F7F3;
+    --text-muted: #A5B1BF;
+    --text-secondary: #677483;
+
+    /* Typography */
+    --font-primary: 'Inter', Arial, sans-serif;
+
+    /* Layout */
+    --max-width: 1200px;
+    --header-height: 88px;
+
+    /* Transitions */
+    --transition: 0.3s ease;
+
+}
+
+
+/* ======================================== */
+/* 2. GLOBAL RESET                          */
+/* ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--ivory);
+    color: var(--text-dark);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+
+/* ======================================== */
+/* 3. SITE HEADER                           */
+/* ======================================== */
+
+.site-header {
+    width: 100%;
+    min-height: var(--header-height);
+    background-color: var(--navy);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* ======================================== */
+/* 4. NAVIGATION BAR                        */
+/* ======================================== */
+
+.navbar {
+    max-width: var(--max-width);
+    min-height: var(--header-height);
+    margin: 0 auto;
+    padding: 0 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+
+/* ======================================== */
+/* 5. PERSONAL BRAND                         */
+/* ======================================== */
+
+.brand {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    color: var(--text-light);
+    white-space: nowrap;
+    transition: color var(--transition);
+}
+
+.brand:hover {
+    color: var(--accent-blue-light);
+}
+
+.brand-dot {
+    color: var(--champagne);
+}
+
+
+/* ======================================== */
+/* 6. NAVIGATION LINKS                      */
+/* ======================================== */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 0;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: var(--text-muted);
+
+    transition: color var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: var(--white);
+}
+
+
+/* Subtle underline animation */
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+    background-color: var(--champagne);
+
+    transition: width var(--transition);
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after {
+    width: 100%;
+}
+
+
+/* ======================================== */
+/* 7. KEYBOARD ACCESSIBILITY                */
+/* ======================================== */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent-blue-light);
+    outline-offset: 5px;
+}
+
+
+/* ======================================== */
+/* 8. TABLET AND MOBILE FOUNDATION          */
+/* ======================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding: 18px 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 24px;
+    }
+
+    .brand {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 16px;
+    }
+
+    .nav-links {
+        gap: 4px 16px;
+    }
+
+    .nav-links a {
+        font-size: 0.82rem;
+    }
+
+}
+
+
+/* ======================================== */
+/* 9. REDUCED MOTION ACCESSIBILITY          */
+/* ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+
+}
+
+
+/* ======================================== */
+/* 10. HOMEPAGE HERO SECTION                */
+/* ======================================== */
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 680px;
+    padding: 110px 32px 130px;
+
+    background-color: var(--navy);
+    color: var(--text-light);
+
+    overflow: hidden;
+}
+
+
+/* Subtle Background Glow */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: -250px;
+    right: -200px;
+
+    width: 750px;
+    height: 750px;
+
+    background: radial-gradient(
+        circle,
+        rgba(57, 118, 168, 0.15) 0%,
+        transparent 70%
+    );
+
+    pointer-events: none;
+}
+
+
+/* Hero Content Container */
+
+.hero-container {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+
+/* Small Introduction Label */
+
+.hero-eyebrow {
+    margin-bottom: 25px;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+    color: var(--champagne);
+}
+
+
+/* Main Headline */
+
+.hero h1 {
+    max-width: 900px;
+
+    font-size: clamp(2.8rem, 5.5vw, 5.3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    display: block;
+    color: var(--accent-blue-light);
+}
+
+
+/* Supporting Description */
+
+.hero-description {
+    max-width: 570px;
+    margin-top: 30px;
+
+    font-size: 1.15rem;
+    line-height: 1.8;
+
+    color: var(--text-muted);
+}
+
+
+/* ======================================== */
+/* 11. HERO BUTTONS                         */
+/* ======================================== */
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    margin-top: 42px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    min-height: 54px;
+    padding: 14px 26px;
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    transition:
+        background-color var(--transition),
+        border-color var(--transition),
+        color var(--transition),
+        transform var(--transition);
+}
+
+
+/* Primary Button */
+
+.btn-primary {
+    background-color: var(--accent-blue);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-blue-light);
+    color: var(--navy);
+    transform: translateY(-2px);
+}
+
+
+/* Secondary Button */
+
+.btn-secondary {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: var(--text-light);
+}
+
+.btn-secondary:hover {
+    border-color: var(--champagne);
+    color: var(--champagne);
+    transform: translateY(-2px);
+}
+
+
+/* ======================================== */
+/* 12. HERO RESPONSIVE DESIGN               */
+/* ======================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 580px;
+        padding: 85px 24px 100px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .hero {
+        min-height: auto;
+        padding: 75px 20px 90px;
+    }
+
+    .hero-eyebrow {
+        font-size: 0.65rem;
+        letter-spacing: 2px;
+    }
+
+    .hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+}
+
+
+/* ======================================== */
+/* 13. FEATURED WORK SECTION                */
+/* ======================================== */
+
+.featured-work {
+    padding: 120px 32px 140px;
+    background-color: var(--ivory);
+}
+
+.work-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+
+/* ======================================== */
+/* 14. FEATURED WORK INTRODUCTION           */
+/* ======================================== */
+
+.work-intro {
+    max-width: 800px;
+    margin-bottom: 85px;
+}
+
+.section-eyebrow {
+    margin-bottom: 22px;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+    color: var(--accent-blue);
+}
+
+.work-intro h2 {
+    font-size: clamp(2.4rem, 4.5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+
+    color: var(--navy);
+}
+
+.work-intro h2 span {
+    display: block;
+    color: var(--accent-blue);
+}
+
+.section-description {
+    max-width: 580px;
+    margin-top: 25px;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+
+    color: var(--text-secondary);
+}
+
+
+/* ======================================== */
+/* 15. FEATURED PROJECT LAYOUT              */
+/* ======================================== */
+
+.featured-project {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.project-visual {
+    min-width: 0;
+    padding: 22px;
+
+    background-color: #E8EBEE;
+    border-radius: 12px;
+}
+
+
+/* ======================================== */
+/* 16. BROWSER SCREENSHOT FRAME             */
+/* ======================================== */
+
+.browser-frame {
+    overflow: hidden;
+
+    background-color: var(--white);
+    border: 1px solid #D5DCE3;
+    border-radius: 8px;
+
+    box-shadow: 0 16px 40px rgba(16, 28, 43, 0.12);
+}
+
+.browser-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    min-height: 42px;
+    padding: 10px 14px;
+
+    background-color: #F3F5F7;
+    border-bottom: 1px solid #DCE2E8;
+}
+
+.browser-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.browser-dots span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+.browser-dots span:nth-child(1) {
+    background-color: #E77773;
+}
+
+.browser-dots span:nth-child(2) {
+    background-color: #E7BC5B;
+}
+
+.browser-dots span:nth-child(3) {
+    background-color: #65BC84;
+}
+
+.browser-address {
+    overflow: hidden;
+
+    font-size: 0.7rem;
+    color: #7F8996;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.browser-content {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+
+    background-color: var(--navy);
+}
+
+.browser-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+
+/* ======================================== */
+/* 17. FEATURED PROJECT DETAILS             */
+/* ======================================== */
+
+.project-number {
+    margin-bottom: 20px;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    color: var(--accent-blue);
+}
+
+.project-details h3 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1px;
+
+    color: var(--navy);
+}
+
+.project-details h3 span {
+    display: block;
+}
+
+.project-description {
+    margin-top: 25px;
+
+    font-size: 1rem;
+    line-height: 1.85;
+
+    color: var(--text-secondary);
+}
+
+
+/* ======================================== */
+/* 18. PROJECT TECHNOLOGIES                 */
+/* ======================================== */
+
+.project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-top: 28px;
+}
+
+.project-technologies span {
+    padding: 7px 12px;
+
+    background-color: #E9EDF1;
+    border-radius: 4px;
+
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+
+/* ======================================== */
+/* 19. PROJECT LINK                         */
+/* ======================================== */
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 35px;
+    padding-bottom: 6px;
+
+    border-bottom: 2px solid var(--champagne);
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--navy);
+
+    transition:
+        color var(--transition),
+        gap var(--transition);
+}
+
+.project-link:hover {
+    color: var(--accent-blue);
+    gap: 18px;
+}
+
+
+/* ======================================== */
+/* 20. FEATURED WORK RESPONSIVE DESIGN      */
+/* ======================================== */
+
+@media (max-width: 900px) {
+
+    .featured-project {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .work-intro {
+        margin-bottom: 55px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .featured-work {
+        padding: 80px 20px 100px;
+    }
+
+    .project-visual {
+        padding: 12px;
+    }
+
+    .browser-address {
+        font-size: 0.6rem;
+    }
+
+    .project-details h3 {
+        font-size: 2rem;
+    }
+
+}
