@@ -1412,3 +1412,206 @@ button:focus-visible {
     }
 
 }
+
+/* ======================================== */
+/* 42. SITE FOOTER                          */
+/* ======================================== */
+
+.site-footer {
+    padding: 85px 32px 30px;
+
+    background-color: var(--navy);
+    color: var(--text-light);
+}
+
+.footer-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+
+/* ======================================== */
+/* 43. FOOTER MAIN LAYOUT                   */
+/* ======================================== */
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.6fr 0.7fr 0.9fr;
+    gap: 75px;
+
+    padding-bottom: 80px;
+}
+
+
+/* ======================================== */
+/* 44. FOOTER BRANDING                      */
+/* ======================================== */
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    font-size: 1.65rem;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+
+    color: var(--white);
+}
+
+.footer-logo span {
+    color: var(--champagne);
+}
+
+.footer-title {
+    margin-bottom: 22px;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    color: var(--accent-blue-light);
+}
+
+.footer-description {
+    max-width: 340px;
+
+    font-size: 0.95rem;
+    line-height: 1.85;
+
+    color: var(--text-muted);
+}
+
+
+/* ======================================== */
+/* 45. FOOTER NAVIGATION & CONTACT          */
+/* ======================================== */
+
+.footer-navigation h2,
+.footer-connect h2 {
+    margin-bottom: 23px;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: var(--champagne);
+}
+
+.footer-navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-navigation a,
+.footer-connect a {
+    display: block;
+    width: fit-content;
+
+    font-size: 0.9rem;
+    line-height: 1.6;
+
+    color: var(--text-muted);
+
+    transition: color var(--transition);
+}
+
+.footer-navigation a:hover,
+.footer-connect a:hover {
+    color: var(--white);
+}
+
+.footer-connect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.footer-connect h2 {
+    margin-bottom: 10px;
+}
+
+.footer-connect a {
+    overflow-wrap: anywhere;
+}
+
+.footer-connect .footer-website {
+    color: var(--accent-blue-light);
+    font-weight: 600;
+}
+
+
+/* ======================================== */
+/* 46. FOOTER BOTTOM BAR                    */
+/* ======================================== */
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+
+    color: var(--text-muted);
+}
+
+.footer-bottom .footer-motto {
+    color: var(--champagne);
+    font-style: italic;
+}
+
+
+/* ======================================== */
+/* 47. FOOTER RESPONSIVE DESIGN             */
+/* ======================================== */
+
+@media (max-width: 900px) {
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .site-footer {
+        padding: 65px 20px 25px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding-bottom: 55px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+}
