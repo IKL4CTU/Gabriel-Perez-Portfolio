@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Let's Build Your Website | Gabriel J. Perez</title>
+
+    <meta name="description"
+        content="Meet Gabriel J. Perez, explore his web design work, and request a free, no-obligation website quote.">
+
+    <link rel="canonical" href="https://gabrieljperez.com/drive/">
+
+    <!-- Reuse the main portfolio's styles and form functionality. -->
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+
+    <style>
+        /* ======================================== */
+        /* CAR QR LANDING PAGE                     */
+        /* ======================================== */
+
+        .drive-container {
+            width: min(1100px, calc(100% - 48px));
+            margin: 0 auto;
+        }
+
+        .drive-header {
+            background: var(--navy);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .drive-navigation {
+            min-height: 84px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .drive-portfolio-link {
+            padding: 12px 0;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        .drive-portfolio-link:hover {
+            color: var(--champagne);
+        }
+
+        .drive-hero {
+            padding: 75px 0;
+            background: var(--navy);
+            color: var(--text-light);
+        }
+
+        .drive-hero-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 0.8fr;
+            align-items: center;
+            gap: 65px;
+        }
+
+        .drive-eyebrow {
+            margin-bottom: 24px;
+            color: var(--champagne);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        .drive-hero h1 {
+            font-size: clamp(2.7rem, 5vw, 4.5rem);
+            line-height: 1.1;
+            letter-spacing: -1.5px;
+        }
+
+        .drive-hero h1 span {
+            display: block;
+            color: var(--accent-blue-light);
+        }
+
+        .drive-description {
+            max-width: 540px;
+            margin-top: 26px;
+            color: #BFCCD9;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .drive-actions {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .drive-work-link {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--champagne);
+            font-size: 0.9rem;
+        }
+
+        .drive-reassurance {
+            margin-top: 16px;
+            color: #BFCCD9;
+            font-size: 0.8rem;
+        }
+
+        .drive-portrait {
+            margin: 0;
+        }
+
+        .drive-portrait img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 4.5;
+            object-fit: cover;
+            object-position: top;
+            border: 1px solid rgba(200, 169, 120, 0.4);
+            border-radius: 8px;
+        }
+
+        .drive-portrait figcaption {
+            margin-top: 16px;
+        }
+
+        .drive-portrait strong,
+        .drive-portrait figcaption span {
+            display: block;
+        }
+
+        .drive-portrait figcaption span {
+            margin-top: 3px;
+            color: #BFCCD9;
+            font-size: 0.85rem;
+        }
+
+        .drive-services {
+            padding: 30px 0;
+            border-bottom: 1px solid #DCE2E8;
+        }
+
+        .drive-services h2 {
+            margin-bottom: 8px;
+            font-size: 1.15rem;
+            line-height: 1.4;
+        }
+
+        .drive-services p {
+            max-width: 760px;
+            color: #526273;
+            font-size: 0.95rem;
+        }
+
+        .drive-work {
+            padding: 70px 0;
+        }
+
+        .drive-section-title {
+            margin-bottom: 30px;
+            font-size: clamp(2rem, 3.5vw, 2.8rem);
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        .drive-project {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .drive-project-image {
+            display: block;
+            padding: 12px;
+            background: #E5E9ED;
+            border-radius: 8px;
+        }
+
+        .drive-project-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .drive-project-label {
+            margin-bottom: 10px;
+            color: #526273;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+        }
+
+        .drive-project h3 {
+            margin-bottom: 14px;
+            font-size: 1.7rem;
+            line-height: 1.2;
+        }
+
+        .drive-project-description {
+            color: #526273;
+            line-height: 1.8;
+        }
+
+        .drive-project .project-link {
+            margin-top: 22px;
+        }
+
+        .drive-more-work {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 0;
+            color: #356B98;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .drive-contact {
+            padding: 70px 0;
+            background: #EDF0F2;
+            border-top: 1px solid #DCE2E8;
+            scroll-margin-top: 20px;
+        }
+
+        .drive-contact-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            align-items: start;
+            gap: 60px;
+        }
+
+        .drive-contact-copy > p:not(.section-eyebrow) {
+            margin-bottom: 26px;
+            color: #526273;
+            line-height: 1.8;
+        }
+
+        .drive-email-label {
+            display: block;
+            margin: 30px 0 10px;
+            color: #356B98;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+        }
+
+        .drive-steps {
+            margin-top: 35px;
+            padding-left: 22px;
+            color: #526273;
+            font-size: 0.95rem;
+        }
+
+        .drive-steps li {
+            margin-bottom: 16px;
+            padding-left: 6px;
+        }
+
+        .drive-steps strong {
+            color: var(--navy);
+        }
+
+        .drive-page .contact-form {
+            padding: 32px;
+        }
+
+        .drive-page .form-note {
+            color: #526273;
+        }
+
+        .drive-page .contact-error a {
+            text-decoration: underline;
+            overflow-wrap: anywhere;
+        }
+
+        .drive-footer {
+            padding: 28px 0;
+            background: var(--navy);
+            color: #BFCCD9;
+            font-size: 0.8rem;
+        }
+
+        .drive-footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .drive-footer a {
+            color: var(--text-light);
+        }
+
+        .drive-skip-link {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+            padding: 12px 18px;
+            transform: translateY(-200%);
+            background: var(--ivory);
+            color: var(--navy);
+        }
+
+        .drive-skip-link:focus {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 800px) {
+            .drive-hero {
+                padding: 45px 0;
+            }
+
+            .drive-hero-grid,
+            .drive-project,
+            .drive-contact-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .drive-portrait {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+
+            .drive-portrait img {
+                width: 76px;
+                height: 90px;
+                flex-shrink: 0;
+            }
+
+            .drive-portrait figcaption {
+                margin: 0;
+            }
+
+            .drive-work,
+            .drive-contact {
+                padding: 48px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .drive-container {
+                width: calc(100% - 40px);
+            }
+
+            .drive-navigation {
+                min-height: 74px;
+                gap: 12px;
+            }
+
+            .drive-navigation .brand {
+                font-size: 1.05rem;
+            }
+
+            .drive-portfolio-link {
+                font-size: 0.75rem;
+            }
+
+            .drive-eyebrow {
+                font-size: 0.6rem;
+                letter-spacing: 1px;
+            }
+
+            .drive-actions .btn {
+                width: 100%;
+            }
+
+            .drive-page .contact-form {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body class="drive-page">
+
+    <a class="drive-skip-link" href="#main">Skip to content</a>
+
+    <!-- HEADER -->
+    <header class="drive-header">
+        <nav class="drive-container drive-navigation" aria-label="Main navigation">
+
+            <a href="../" class="brand">
+                Gabriel J. Perez<span class="brand-dot">.</span>
+            </a>
+
+            <a href="../" class="drive-portfolio-link">
+                Full Portfolio <span aria-hidden="true">↗</span>
+            </a>
+
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- INTRODUCTION -->
+        <section class="drive-hero" aria-labelledby="drive-title">
+            <div class="drive-container drive-hero-grid">
+
+                <div>
+                    <p class="drive-eyebrow">
+                        SAW THE CAR? YOU'RE IN THE RIGHT PLACE.
+                    </p>
+
+                    <h1 id="drive-title">
+                        Your next website
+                        <span>starts here.</span>
+                    </h1>
+
+                    <p class="drive-description">
+                        Turn a first impression into a reason to get in touch.
+                        I build thoughtful, easy-to-use websites that help
+                        businesses show what they do.
+                    </p>
+
+                    <div class="drive-actions">
+
+                        <a href="#quote" class="btn btn-primary">
+                            Request a Free Quote
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a href="#work" class="drive-work-link">
+                            See the Work
+                            <span aria-hidden="true">↓</span>
+                        </a>
+
+                    </div>
+
+                    <p class="drive-reassurance">
+                        A conversation, not a commitment.
+                    </p>
+                </div>
+
+                <figure class="drive-portrait">
+
+                    <img src="../images/gabriel-headshot.png"
+                        alt="Gabriel J. Perez"
+                        width="1122"
+                        height="1402">
+
+                    <figcaption>
+                        <strong>Hi, I'm Gabriel.</strong>
+                        <span>Independent web designer &amp; developer.</span>
+                    </figcaption>
+
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="drive-services" aria-labelledby="drive-services-title">
+            <div class="drive-container">
+
+                <h2 id="drive-services-title">
+                    A new site. A fresh start. A better first impression.
+                </h2>
+
+                <p>
+                    New websites, website redesigns, and updates &amp;
+                    maintenance — built around your business and your goals.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- FEATURED WORK -->
+        <section id="work" class="drive-work" aria-labelledby="drive-work-title">
+            <div class="drive-container">
+
+                <p class="section-eyebrow">A LOOK AT THE WORK</p>
+
+                <h2 id="drive-work-title" class="drive-section-title">
+                    Design with purpose.
+                </h2>
+
+                <article class="drive-project">
+
+                    <a href="https://ikl4ctu.github.io/hilton-accords/"
+                        class="drive-project-image"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Explore the Hilton Accords concept website, opens in a new tab">
+
+                        <img src="../images/hilton-accords.png"
+                            alt="The Hilton Accords concept website"
+                            width="1920"
+                            height="940"
+                            loading="lazy">
+
+                    </a>
+
+                    <div>
+                        <p class="drive-project-label">
+                            FEATURED CONCEPT PROJECT
+                        </p>
+
+                        <h3>The Hilton Accords</h3>
+
+                        <p class="drive-project-description">
+                            A fictional institutional portal that brings a
+                            detailed world together through clear navigation,
+                            consistent design, and responsive layouts.
+                        </p>
+
+                        <a href="https://ikl4ctu.github.io/hilton-accords/"
+                            class="project-link"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Explore the Live Demo
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+
+                </article>
+
+                <a href="../#work" class="drive-more-work">
+                    See more work on the main portfolio
+                    <span aria-hidden="true">→</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- PROJECT INQUIRY -->
+        <section id="quote" class="drive-contact" aria-labelledby="drive-quote-title">
+            <div class="drive-container drive-contact-grid">
+
+                <div class="drive-contact-copy">
+
+                    <p class="section-eyebrow">LET'S BUILD SOMETHING</p>
+
+                    <h2 id="drive-quote-title" class="drive-section-title">
+                        What does your business need?
+                    </h2>
+
+                    <p>
+                        Tell me a little about your business and what you'd
+                        like your website to do. We'll start with a
+                        conversation, then put together a scope and quote
+                        that fit your project.
+                    </p>
+
+                    <span class="drive-email-label">PREFER EMAIL?</span>
+
+                    <a href="mailto:gabriel@gabrieljperez.com"
+                        class="contact-email">
+                        gabriel@gabrieljperez.com
+                    </a>
+
+                    <ol class="drive-steps">
+                        <li>
+                            <strong>Share your idea.</strong>
+                            New site, refresh, or a question.
+                        </li>
+                        <li>
+                            <strong>Talk through the details.</strong>
+                            Goals, scope, and timing.
+                        </li>
+                        <li>
+                            <strong>Review your quote.</strong>
+                            Decide when you're ready.
+                        </li>
+                    </ol>
+
+                </div>
+
+                <div>
+
+                    <form class="contact-form"
+                        id="contact-form"
+                        action="https://formspree.io/f/xwlvajyp"
+                        method="POST">
+
+                        <h3>Let's hear your idea.</h3>
+
+                        <!-- Identify inquiries coming from the car's QR page. -->
+                        <input type="hidden"
+                            name="source"
+                            value="Car QR — gabrieljperez.com/drive/">
+
+                        <div class="form-group">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text"
+                                id="contact-name"
+                                name="name"
+                                autocomplete="name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email"
+                                id="contact-email"
+                                name="email"
+                                autocomplete="email"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project-type">
+                                What can I help you with?
+                            </label>
+
+                            <select id="project-type" name="project_type" required>
+                                <option value="" disabled selected>
+                                    Select a service
+                                </option>
+                                <option value="new-website">New Website</option>
+                                <option value="redesign">Website Redesign</option>
+                                <option value="maintenance">
+                                    Updates &amp; Maintenance
+                                </option>
+                                <option value="other">Something Else</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project-message">
+                                A Little About Your Project
+                            </label>
+
+                            <textarea id="project-message"
+                                name="message"
+                                rows="4"
+                                placeholder="What does your business do, and what would you like help with?"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="btn btn-primary contact-submit">
+                            Send Project Inquiry
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                        <p class="form-note">
+                            Free, no-obligation quote.
+                            This form uses Formspree to send your inquiry.
+                        </p>
+
+                        <p id="contact-error"
+                            class="contact-error"
+                            role="alert"
+                            hidden>
+                            Your inquiry couldn't be sent. Please try again or
+                            <a href="mailto:gabriel@gabrieljperez.com">
+                                email me directly.
+                            </a>
+                        </p>
+
+                    </form>
+
+                    <div id="contact-success"
+                        class="contact-success"
+                        role="status"
+                        aria-live="polite"
+                        tabindex="-1"
+                        hidden>
+
+                        <div class="success-icon" aria-hidden="true">✓</div>
+
+                        <h3>Thanks for reaching out!</h3>
+
+                        <p>
+                            Your inquiry was submitted successfully.
+                            I look forward to learning about your project.
+                        </p>
+
+                        <p class="success-signature">— Gabriel J. Perez</p>
+
+                        <a href="../" class="project-link">
+                            Explore the Full Portfolio
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="drive-footer">
+        <div class="drive-container drive-footer-content">
+
+            <p>
+                &copy; 2026 Gabriel J. Perez
+                · Web Design &amp; Development
+            </p>
+
+            <a href="../">gabrieljperez.com</a>
+
+        </div>
+    </footer>
+
+</body>
+</html>
