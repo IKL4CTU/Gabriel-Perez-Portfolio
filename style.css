@@ -1939,3 +1939,76 @@ button:focus-visible {
         flex-direction: column;
     }
 }
+/* ======================================== */
+/* WORK PAGE PROJECT CARDS                  */
+/* ======================================== */
+
+.portfolio-project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.portfolio-project-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 32px;
+
+    background-color: var(--white);
+    border: 1px solid #DCE2E8;
+    border-top: 3px solid var(--accent-blue);
+    border-radius: 10px;
+}
+
+.portfolio-status {
+    align-self: flex-start;
+    margin-bottom: 28px;
+    padding: 5px 10px;
+
+    background-color: #F5EEDD;
+    color: #70521D;
+    border: 1px solid #DAC69D;
+    border-radius: 4px;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.portfolio-project-card h2 {
+    font-size: 1.65rem;
+    line-height: 1.25;
+    color: var(--navy);
+    overflow-wrap: anywhere;
+}
+
+.portfolio-card-subtitle {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-blue);
+}
+
+.portfolio-project-card .project-technologies {
+    margin-bottom: 28px;
+}
+
+.portfolio-project-card .portfolio-project-links {
+    margin-top: auto;
+}
+
+@media (max-width: 1024px) {
+    .portfolio-project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .portfolio-project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-project-card {
+        padding: 28px 24px;
+    }
+}
