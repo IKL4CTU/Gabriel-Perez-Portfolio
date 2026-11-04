@@ -2012,3 +2012,10 @@ button:focus-visible {
         padding: 28px 24px;
     }
 }
+.footer-scripture {
+  color: #d9ad66;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
