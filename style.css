@@ -2019,3 +2019,275 @@ button:focus-visible {
   letter-spacing: 0.08em;
   text-align: center;
 }
+
+
+/* ==========================================
+   SERVICES & PRICING
+   ========================================== */
+
+.pricing {
+  padding: 110px 24px;
+  background: #f8f7f4;
+}
+
+.pricing-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Section Introduction */
+
+.pricing-intro {
+  max-width: 760px;
+  margin: 0 auto 56px;
+  text-align: center;
+}
+
+.pricing-intro .section-eyebrow {
+  color: #b58c50;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.pricing-intro h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+  color: #17253a;
+  margin-bottom: 22px;
+}
+
+.pricing-intro h2 span {
+  color: #b58c50;
+}
+
+.pricing-description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #647184;
+}
+
+/* Pricing Cards */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  background: #ffffff;
+  border: 1px solid #e2e5ea;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(16, 27, 43, 0.05);
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease,
+              border-color 0.25s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(16, 27, 43, 0.1);
+  border-color: #b58c50;
+}
+
+.pricing-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #b58c50;
+  margin-bottom: 16px;
+}
+
+.pricing-card h3 {
+  font-size: 1.45rem;
+  color: #17253a;
+  margin-bottom: 22px;
+}
+
+.pricing-starting {
+  color: #778397;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.pricing-price {
+  font-size: 2.8rem;
+  font-weight: 750;
+  line-height: 1.15;
+  color: #17253a;
+  margin-bottom: 20px;
+}
+
+.pricing-price span {
+  color: #b58c50;
+  font-size: 1.7rem;
+  vertical-align: top;
+}
+
+.pricing-summary {
+  color: #647184;
+  line-height: 1.7;
+  margin-bottom: 26px;
+}
+
+/* Feature Lists */
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+}
+
+.pricing-features li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 13px;
+  color: #405067;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.pricing-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #b58c50;
+  font-weight: 700;
+}
+
+/* Quote Links */
+
+.pricing-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  color: #3379a9;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.pricing-link:hover {
+  color: #b58c50;
+}
+
+/* Custom Development Panel */
+
+.pricing-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 42px;
+  background: #101b2b;
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+
+.pricing-custom h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.pricing-custom > div:first-child > p:last-child {
+  color: #b7c3d3;
+  line-height: 1.8;
+  max-width: 620px;
+}
+
+.pricing-custom-action {
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.pricing-custom-action .pricing-starting {
+  color: #b7c3d3;
+}
+
+.pricing-custom-action .pricing-price {
+  color: #d9ad66;
+}
+
+.pricing-custom-action .pricing-link {
+  color: #ffffff;
+}
+
+.pricing-custom-action .pricing-link:hover {
+  color: #d9ad66;
+}
+
+/* Pricing Disclaimer */
+
+.pricing-note {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing-note h3 {
+  font-size: 1.15rem;
+  color: #17253a;
+  margin-bottom: 14px;
+}
+
+.pricing-note p {
+  color: #647184;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 768px) {
+  .pricing {
+    padding: 75px 20px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card {
+    padding: 28px;
+  }
+
+  .pricing-custom {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 24px;
+  }
+
+  .pricing-custom-action {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-intro h2 {
+    font-size: 1.9rem;
+  }
+
+  .pricing-price {
+    font-size: 2.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pricing-card,
+  .pricing-link {
+    transition: none;
+  }
+
+  .pricing-card:hover {
+    transform: none;
+  }
+}

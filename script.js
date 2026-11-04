@@ -129,3 +129,35 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileBreakpoint.addEventListener("change", closeMenu);
 
 });
+
+
+/* ==========================================
+   PRICING PACKAGE AUTO-SELECTION
+   ========================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const packageLinks = document.querySelectorAll(
+    ".pricing-link[data-package]"
+  );
+
+  const projectType = document.getElementById("project-type");
+
+  if (!projectType) return;
+
+  packageLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      const selectedPackage = link.dataset.package;
+
+      const matchingOption = Array.from(projectType.options)
+        .find((option) => option.value === selectedPackage);
+
+      if (matchingOption) {
+        projectType.value = selectedPackage;
+
+        projectType.dispatchEvent(
+          new Event("change", { bubbles: true })
+        );
+      }
+    });
+  });
+});
