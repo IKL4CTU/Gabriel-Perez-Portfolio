@@ -1,0 +1,125 @@
+
+{
+    "collections": [
+        {
+            "name": "Porcelain Tile",
+            "code": "PT",
+            "material": "Porcelain",
+            "application": ["Residential", "Commercial"],
+            "texture": "stone",
+            "colors": [
+                {"name": "Ivory", "code": "IV", "hex": "#DCD6C8"},
+                {"name": "Sand", "code": "SD", "hex": "#BEAB91"},
+                {"name": "Gray", "code": "GY", "hex": "#9B9C99"},
+                {"name": "Charcoal", "code": "CH", "hex": "#555A5A"},
+                {"name": "White", "code": "WH", "hex": "#EAE8E0"}
+            ],
+            "models": [
+                {"id": "101", "name": "Carrara Collection", "size": "12 × 24 in", "thickness": 9, "coverage": 16, "finish": "Polished"},
+                {"id": "102", "name": "Calacatta Collection", "size": "24 × 24 in", "thickness": 10, "coverage": 16, "finish": "Polished"},
+                {"id": "103", "name": "Urban Concrete", "size": "24 × 48 in", "thickness": 10, "coverage": 16, "finish": "Matte"},
+                {"id": "104", "name": "Coastal Limestone", "size": "12 × 24 in", "thickness": 9, "coverage": 16, "finish": "Matte"},
+                {"id": "105", "name": "Imperial Stone", "size": "24 × 24 in", "thickness": 10, "coverage": 16, "finish": "Textured"},
+                {"id": "106", "name": "Alpine Travertine", "size": "12 × 24 in", "thickness": 9, "coverage": 16, "finish": "Matte"},
+                {"id": "107", "name": "Metropolitan Series", "size": "24 × 48 in", "thickness": 11, "coverage": 16, "finish": "Matte"},
+                {"id": "108", "name": "Heritage Marble", "size": "24 × 24 in", "thickness": 10, "coverage": 16, "finish": "Polished"}
+            ]
+        },
+        {
+            "name": "Ceramic Tile",
+            "code": "CT",
+            "material": "Ceramic",
+            "application": ["Residential"],
+            "texture": "ceramic",
+            "colors": [
+                {"name": "White", "code": "WH", "hex": "#EDEBE4"},
+                {"name": "Ivory", "code": "IV", "hex": "#DDD0BA"},
+                {"name": "Gray", "code": "GY", "hex": "#A1A6A5"},
+                {"name": "Blue", "code": "BL", "hex": "#67858F"},
+                {"name": "Sand", "code": "SD", "hex": "#BCA68F"}
+            ],
+            "models": [
+                {"id": "201", "name": "Studio Subway", "size": "3 × 6 in", "thickness": 7, "coverage": 10, "finish": "Gloss"},
+                {"id": "202", "name": "Classic Metro", "size": "4 × 12 in", "thickness": 8, "coverage": 12, "finish": "Gloss"},
+                {"id": "203", "name": "Modern Square", "size": "8 × 8 in", "thickness": 8, "coverage": 12, "finish": "Matte"},
+                {"id": "204", "name": "Artisan Collection", "size": "6 × 6 in", "thickness": 9, "coverage": 10, "finish": "Textured"},
+                {"id": "205", "name": "Coastal Glaze", "size": "3 × 12 in", "thickness": 8, "coverage": 10, "finish": "Gloss"},
+                {"id": "206", "name": "Contemporary Field", "size": "12 × 12 in", "thickness": 8, "coverage": 15, "finish": "Matte"},
+                {"id": "207", "name": "Terrace Collection", "size": "12 × 24 in", "thickness": 9, "coverage": 16, "finish": "Matte"},
+                {"id": "208", "name": "Gallery Wall", "size": "4 × 16 in", "thickness": 8, "coverage": 12, "finish": "Gloss"}
+            ]
+        },
+        {
+            "name": "Engineered Hardwood",
+            "code": "HW",
+            "material": "Engineered Wood",
+            "application": ["Residential"],
+            "texture": "wood",
+            "colors": [
+                {"name": "Natural", "code": "NT", "hex": "#C7A476"},
+                {"name": "Honey", "code": "HN", "hex": "#A77B4C"},
+                {"name": "Walnut", "code": "WN", "hex": "#75513B"},
+                {"name": "Gray", "code": "GY", "hex": "#99978C"},
+                {"name": "Espresso", "code": "ES", "hex": "#493B32"}
+            ],
+            "models": [
+                {"id": "301", "name": "European Oak", "size": "7 × 72 in", "thickness": 14, "coverage": 24.5, "finish": "Matte"},
+                {"id": "302", "name": "American Hickory", "size": "5 × 48 in", "thickness": 12, "coverage": 20, "finish": "Satin"},
+                {"id": "303", "name": "Heritage Oak", "size": "8 × 72 in", "thickness": 15, "coverage": 24, "finish": "Wire Brushed"},
+                {"id": "304", "name": "Pacific Maple", "size": "6 × 48 in", "thickness": 12, "coverage": 22, "finish": "Satin"},
+                {"id": "305", "name": "Estate Collection", "size": "9 × 72 in", "thickness": 15, "coverage": 27, "finish": "Wire Brushed"},
+                {"id": "306", "name": "Modern Oak", "size": "7 × 60 in", "thickness": 14, "coverage": 23.33, "finish": "Matte"},
+                {"id": "307", "name": "Rustic Timber", "size": "7 × 48 in", "thickness": 13, "coverage": 21, "finish": "Textured"},
+                {"id": "308", "name": "Signature Plank", "size": "8 × 60 in", "thickness": 15, "coverage": 26.67, "finish": "Matte"}
+            ]
+        },
+        {
+            "name": "Luxury Vinyl",
+            "code": "LV",
+            "material": "SPC Vinyl",
+            "application": ["Residential", "Commercial"],
+            "texture": "wood",
+            "colors": [
+                {"name": "Natural", "code": "NT", "hex": "#C3A982"},
+                {"name": "Sand", "code": "SD", "hex": "#D0BFA3"},
+                {"name": "Walnut", "code": "WN", "hex": "#805C42"},
+                {"name": "Gray", "code": "GY", "hex": "#9B9F9B"},
+                {"name": "Charcoal", "code": "CH", "hex": "#565C59"}
+            ],
+            "models": [
+                {"id": "401", "name": "Pacific Reserve", "size": "7 × 48 in", "thickness": 5, "coverage": 23.33, "finish": "Textured"},
+                {"id": "402", "name": "Commercial Pro", "size": "9 × 60 in", "thickness": 7, "coverage": 26.25, "finish": "Matte"},
+                {"id": "403", "name": "Coastal Plank", "size": "7 × 48 in", "thickness": 5, "coverage": 23.33, "finish": "Matte"},
+                {"id": "404", "name": "Urban Oak", "size": "8 × 48 in", "thickness": 6, "coverage": 24, "finish": "Textured"},
+                {"id": "405", "name": "Elite Wide Plank", "size": "9 × 60 in", "thickness": 8, "coverage": 26.25, "finish": "Textured"},
+                {"id": "406", "name": "Cascade Series", "size": "7 × 60 in", "thickness": 6, "coverage": 23.33, "finish": "Matte"},
+                {"id": "407", "name": "Studio Luxury", "size": "6 × 48 in", "thickness": 5, "coverage": 24, "finish": "Satin"},
+                {"id": "408", "name": "Summit Performance", "size": "8 × 60 in", "thickness": 8, "coverage": 26.67, "finish": "Textured"}
+            ]
+        },
+        {
+            "name": "Laminate Flooring",
+            "code": "LM",
+            "material": "HDF Laminate",
+            "application": ["Residential"],
+            "texture": "wood",
+            "colors": [
+                {"name": "Natural", "code": "NT", "hex": "#C8AA7D"},
+                {"name": "Honey", "code": "HN", "hex": "#B18755"},
+                {"name": "Walnut", "code": "WN", "hex": "#866449"},
+                {"name": "Gray", "code": "GY", "hex": "#A09F96"},
+                {"name": "Espresso", "code": "ES", "hex": "#544438"}
+            ],
+            "models": [
+                {"id": "501", "name": "Essential Oak", "size": "7 × 48 in", "thickness": 8, "coverage": 23.33, "finish": "Matte"},
+                {"id": "502", "name": "Classic Timber", "size": "6 × 48 in", "thickness": 8, "coverage": 24, "finish": "Satin"},
+                {"id": "503", "name": "Architectural Plank", "size": "8 × 48 in", "thickness": 10, "coverage": 24, "finish": "Textured"},
+                {"id": "504", "name": "Heritage Wood", "size": "7 × 48 in", "thickness": 12, "coverage": 21, "finish": "Textured"},
+                {"id": "505", "name": "Modern Reserve", "size": "8 × 60 in", "thickness": 10, "coverage": 26.67, "finish": "Matte"},
+                {"id": "506", "name": "Residential Select", "size": "6 × 48 in", "thickness": 8, "coverage": 24, "finish": "Satin"},
+                {"id": "507", "name": "Premier Collection", "size": "9 × 60 in", "thickness": 12, "coverage": 26.25, "finish": "Textured"},
+                {"id": "508", "name": "Designer Oak", "size": "7 × 60 in", "thickness": 12, "coverage": 23.33, "finish": "Matte"}
+            ]
+        }
+    ]
+}

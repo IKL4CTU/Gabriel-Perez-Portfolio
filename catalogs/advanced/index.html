@@ -1,0 +1,748 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore Summit Flooring Supply's wholesale collection of premium flooring materials.">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Summit Flooring Supply | Wholesale Flooring</title>
+
+    <link rel="stylesheet" href="advanced.css">
+
+    <script src="advanced.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- ======================================== -->
+    <!-- GJP DEMONSTRATION BANNER                 -->
+    <!-- ======================================== -->
+
+    <div class="demo-banner">
+
+        <a href="../../index.html#catalog">
+            &larr; Return to GJP
+        </a>
+
+        <span>ADVANCED CATALOG DEMONSTRATION</span>
+
+        <a href="../../index.html#contact">
+            Request a Website Like This &rarr;
+        </a>
+
+    </div>
+
+
+    <!-- ======================================== -->
+    <!-- NAVIGATION                               -->
+    <!-- ======================================== -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a class="brand" href="#home">
+
+                <span class="brand-mark">S</span>
+
+                <div>
+                    SUMMIT
+                    <small>FLOORING SUPPLY</small>
+                </div>
+
+            </a>
+
+            <nav class="navigation"
+                aria-label="Main navigation">
+
+                <a href="#home">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#catalog">Catalog</a>
+                <a href="#calculator">Project Calculator</a>
+                <a href="#about">About</a>
+
+            </nav>
+
+            <button class="header-button"
+                id="open-quote" type="button">
+
+                Quote List
+                <span id="quote-count">0</span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main id="home">
+
+        <!-- ======================================== -->
+        <!-- HERO                                     -->
+        <!-- ======================================== -->
+
+        <section class="hero">
+
+            <div class="hero-container">
+
+                <p class="eyebrow">
+                    PREMIUM FLOORING / WHOLESALE DISTRIBUTION
+                </p>
+
+                <h1>
+                    Exceptional spaces.
+                    <span>Built from the ground up.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover premium flooring collections
+                    designed for contractors, architects,
+                    designers and independent retailers.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#catalog" class="button primary">
+                        Explore Our Catalog &rarr;
+                    </a>
+
+                    <a href="#calculator" class="button outline">
+                        Calculate Your Project
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================== -->
+        <!-- BUSINESS HIGHLIGHTS                      -->
+        <!-- ======================================== -->
+
+        <section class="highlights">
+
+            <div>
+                <strong>200</strong>
+                <span>Product Selections</span>
+            </div>
+
+            <div>
+                <strong>5</strong>
+                <span>Flooring Collections</span>
+            </div>
+
+            <div>
+                <strong>Trade</strong>
+                <span>Wholesale Solutions</span>
+            </div>
+
+            <div>
+                <strong>Nationwide</strong>
+                <span>Distribution</span>
+            </div>
+
+        </section>
+
+
+        <!-- ======================================== -->
+        <!-- FLOORING COLLECTIONS                     -->
+        <!-- ======================================== -->
+
+        <section id="collections" class="section">
+
+            <div class="container">
+
+                <div class="section-intro">
+
+                    <p class="eyebrow">
+                        FIND YOUR FOUNDATION
+                    </p>
+
+                    <h2>Explore Our Collections.</h2>
+
+                    <p>
+                        Materials for every environment,
+                        every project and every design vision.
+                    </p>
+
+                </div>
+
+                <div id="collection-grid"
+                    class="collection-grid">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================== -->
+        <!-- DIGITAL PRODUCT CATALOG                  -->
+        <!-- ======================================== -->
+
+        <section id="catalog" class="section catalog-section">
+
+            <div class="container">
+
+                <div class="section-intro">
+
+                    <p class="eyebrow">
+                        THE SUMMIT PRODUCT LIBRARY
+                    </p>
+
+                    <h2>Wholesale Product Catalog.</h2>
+
+                    <p>
+                        Browse materials, compare specifications
+                        and build your wholesale quote.
+                    </p>
+
+                </div>
+
+
+                <!-- PRODUCT SEARCH -->
+
+                <div class="search-bar">
+
+                    <input type="search"
+                        id="product-search"
+                        aria-label="Search catalog"
+                        placeholder="Search products, collections or SKU...">
+
+                    <button id="clear-search"
+                        class="button secondary"
+                        type="button">
+
+                        Clear
+
+                    </button>
+
+                </div>
+
+
+                <div class="catalog-layout">
+
+
+                    <!-- FILTER SIDEBAR -->
+
+                    <aside class="filter-sidebar">
+
+                        <div class="filter-heading">
+
+                            <h3>Refine Results</h3>
+
+                            <button id="reset-filters"
+                                class="text-button"
+                                type="button">
+
+                                Reset
+
+                            </button>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <h4>Collection</h4>
+
+                            <div id="category-filters"></div>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <h4>Color</h4>
+
+                            <div id="color-filters"></div>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <h4>Material</h4>
+
+                            <div id="material-filters"></div>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <h4>Application</h4>
+
+                            <div id="application-filters"></div>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <h4>Surface Finish</h4>
+
+                            <div id="finish-filters"></div>
+
+                        </div>
+
+                    </aside>
+
+
+                    <!-- RESULTS -->
+
+                    <div class="catalog-results">
+
+                        <div class="results-toolbar">
+
+                            <p id="results-count"
+                                aria-live="polite">
+
+                                Loading products...
+
+                            </p>
+
+                            <div class="toolbar-actions">
+
+                                <select id="product-sort"
+                                    aria-label="Sort products">
+
+                                    <option value="default">
+                                        Featured
+                                    </option>
+
+                                    <option value="name-asc">
+                                        Name: A–Z
+                                    </option>
+
+                                    <option value="name-desc">
+                                        Name: Z–A
+                                    </option>
+
+                                    <option value="sku">
+                                        Product Number
+                                    </option>
+
+                                    <option value="thickness">
+                                        Thickness
+                                    </option>
+
+                                </select>
+
+                                <button id="grid-view"
+                                    class="view-button active"
+                                    aria-pressed="true"
+                                    type="button">
+
+                                    Grid
+
+                                </button>
+
+                                <button id="list-view"
+                                    class="view-button"
+                                    aria-pressed="false"
+                                    type="button">
+
+                                    List
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div id="product-grid"
+                            class="product-grid">
+
+                        </div>
+
+
+                        <div id="empty-state"
+                            class="empty-state" hidden>
+
+                            <h3>No matching products.</h3>
+
+                            <p>
+                                Try another search or adjust
+                                your selected filters.
+                            </p>
+
+                            <button id="empty-reset"
+                                class="button primary"
+                                type="button">
+
+                                Reset Filters
+
+                            </button>
+
+                        </div>
+
+
+                        <nav id="pagination"
+                            class="pagination"
+                            aria-label="Catalog pages">
+
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================== -->
+        <!-- PROJECT CALCULATOR                       -->
+        <!-- ======================================== -->
+
+        <section id="calculator" class="section calculator-section">
+
+            <div class="container calculator-layout">
+
+                <div class="calculator-intro">
+
+                    <p class="eyebrow">
+                        PLAN YOUR NEXT PROJECT
+                    </p>
+
+                    <h2>Project Material Calculator.</h2>
+
+                    <p>
+                        Estimate your flooring requirements,
+                        including waste allowance and the
+                        number of cartons required.
+                    </p>
+
+                    <p>
+                        Select a product directly from the catalog
+                        to automatically load its carton coverage.
+                    </p>
+
+                </div>
+
+
+                <form id="calculator-form"
+                    class="calculator-form">
+
+                    <h3>Calculate Material Requirements</h3>
+
+                    <label for="room-length">
+                        Room Length (feet)
+                    </label>
+
+                    <input type="number"
+                        id="room-length"
+                        min="0.1" max="100000"
+                        step="0.1" value="15" required>
+
+
+                    <label for="room-width">
+                        Room Width (feet)
+                    </label>
+
+                    <input type="number"
+                        id="room-width"
+                        min="0.1" max="100000"
+                        step="0.1" value="12" required>
+
+
+                    <label for="waste-percentage">
+                        Waste Allowance
+                    </label>
+
+                    <select id="waste-percentage">
+
+                        <option value="5">5%</option>
+                        <option value="10" selected>10%</option>
+                        <option value="15">15%</option>
+                        <option value="20">20%</option>
+
+                    </select>
+
+
+                    <label for="calculator-product">
+                        Select Flooring Product
+                    </label>
+
+                    <select id="calculator-product" required>
+                        <option value="">Select a product</option>
+                    </select>
+
+
+                    <button class="button primary"
+                        type="submit">
+
+                        Calculate Requirements
+
+                    </button>
+
+                    <div id="calculator-result"
+                        class="calculator-result"
+                        aria-live="polite" hidden>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================== -->
+        <!-- ABOUT                                    -->
+        <!-- ======================================== -->
+
+        <section id="about" class="section about-section">
+
+            <div class="container about-container">
+
+                <p class="eyebrow">
+                    THE SUMMIT STANDARD
+                </p>
+
+                <h2>Built for professionals.</h2>
+
+                <p>
+                    Summit Flooring Supply is a fictional
+                    wholesale distributor created to demonstrate
+                    advanced digital catalog functionality,
+                    product comparison and project planning tools.
+                </p>
+
+                <a href="#catalog"
+                    class="button primary">
+
+                    Browse Our Collections
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ======================================== -->
+    <!-- PRODUCT COMPARISON BAR                   -->
+    <!-- ======================================== -->
+
+    <div id="compare-bar" class="compare-bar" hidden>
+
+        <div>
+
+            <strong>Compare Products</strong>
+
+            <span id="compare-count">0 of 3 selected</span>
+
+        </div>
+
+        <div class="compare-actions">
+
+            <button id="clear-compare"
+                class="button outline"
+                type="button">
+
+                Clear
+
+            </button>
+
+            <button id="open-compare"
+                class="button primary"
+                type="button">
+
+                Compare Now
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ======================================== -->
+    <!-- PRODUCT DETAILS DIALOG                   -->
+    <!-- ======================================== -->
+
+    <dialog id="product-modal"
+        aria-label="Product details">
+
+        <button class="modal-close"
+            data-close="product-modal"
+            aria-label="Close product details"
+            type="button">
+
+            &times;
+
+        </button>
+
+        <div id="product-modal-content"></div>
+
+    </dialog>
+
+
+    <!-- ======================================== -->
+    <!-- PRODUCT COMPARISON DIALOG                -->
+    <!-- ======================================== -->
+
+    <dialog id="compare-modal"
+        class="compare-modal"
+        aria-labelledby="compare-title">
+
+        <button class="modal-close"
+            data-close="compare-modal"
+            aria-label="Close comparison"
+            type="button">
+
+            &times;
+
+        </button>
+
+        <h2 id="compare-title">
+            Product Comparison
+        </h2>
+
+        <p>Compare technical specifications side by side.</p>
+
+        <div id="compare-content"></div>
+
+    </dialog>
+
+
+    <!-- ======================================== -->
+    <!-- QUOTE REQUEST DIALOG                     -->
+    <!-- ======================================== -->
+
+    <dialog id="quote-modal"
+        aria-labelledby="quote-title">
+
+        <button class="modal-close"
+            data-close="quote-modal"
+            aria-label="Close quote list"
+            type="button">
+
+            &times;
+
+        </button>
+
+        <h2 id="quote-title">Your Wholesale Quote</h2>
+
+        <p>Review your selected products and carton quantities.</p>
+
+        <div id="quote-items"></div>
+
+        <form id="quote-form" class="quote-form">
+
+            <h3>Request Information</h3>
+
+            <label for="quote-name">Full Name</label>
+
+            <input id="quote-name"
+                autocomplete="name" required>
+
+            <label for="quote-company">Company</label>
+
+            <input id="quote-company"
+                autocomplete="organization" required>
+
+            <label for="quote-email">Email Address</label>
+
+            <input type="email"
+                id="quote-email"
+                autocomplete="email" required>
+
+            <label for="quote-notes">Project Details</label>
+
+            <textarea id="quote-notes" rows="4"></textarea>
+
+            <button class="button primary"
+                type="submit">
+
+                Preview Quote Request
+
+            </button>
+
+            <small>
+                Demonstration only. No information is transmitted.
+            </small>
+
+        </form>
+
+        <div id="quote-confirmation"
+            class="quote-confirmation"
+            aria-live="polite" hidden>
+
+        </div>
+
+    </dialog>
+
+
+    <!-- STATUS NOTIFICATION -->
+
+    <div id="toast"
+        class="toast"
+        role="status" hidden>
+
+    </div>
+
+
+    <!-- ======================================== -->
+    <!-- FOOTER                                   -->
+    <!-- ======================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-layout">
+
+            <div>
+
+                <h3>SUMMIT FLOORING SUPPLY</h3>
+
+                <p>Exceptional materials. Professional solutions.</p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#collections">Collections</a>
+                <a href="#catalog">Products</a>
+                <a href="#calculator">Calculator</a>
+
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+
+            <p>
+                Fictional business and sample products.
+                All specifications are illustrative.
+            </p>
+
+            <p>
+                Designed &amp; Developed by
+                <a href="../../index.html">
+                    GJP Web Design &amp; Development
+                </a>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
