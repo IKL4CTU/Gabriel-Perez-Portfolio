@@ -412,7 +412,7 @@
 
                     <p class="services-description">
                         Whether you're launching something new or
-                        improving what you already have, I can h<a href="#work">My Work</a>elp
+                        improving what you already have, I can help
                         you build a stronger digital presence.
                     </p>
 
@@ -498,6 +498,157 @@
                     <p class="cta-reassurance">
                         No cost. No obligation. No pressure.
                     </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================== -->
+        <!-- CATALOG WEBSITES SECTION              -->
+        <!-- ===================================== -->
+
+        <section id="catalog" class="catalog" aria-labelledby="catalog-title">
+
+            <div class="catalog-container">
+
+                <!-- Section Introduction -->
+                <div class="catalog-intro">
+
+                    <p class="section-eyebrow">
+                        CATALOG WEBSITES
+                    </p>
+
+                    <h2 id="catalog-title">
+                        Your product catalog online.
+                        <span>Pay once, own it.</span>
+                    </h2>
+
+                    <p class="catalog-description">
+                        No monthly platform fees. I build the site, organize
+                        your product information, and hand over everything.
+                        After launch, your only recurring cost is your yearly
+                        domain renewal.
+                    </p>
+
+                </div>
+
+                <!-- Comparison -->
+                <div class="catalog-compare">
+
+                    <article class="catalog-card catalog-card-typical">
+                        <h3>Typical website builder</h3>
+                        <ul>
+                            <li>Monthly subscription that never ends</li>
+                            <li>You organize and upload every product yourself</li>
+                            <li>Your site lives on their platform, on their terms</li>
+                        </ul>
+                    </article>
+
+                    <article class="catalog-card catalog-card-onetime">
+                        <h3>One-time catalog build</h3>
+                        <ul>
+                            <li>One fee, then only your yearly domain renewal</li>
+                            <li>I turn your price lists, PDFs and photos into a clean catalog</li>
+                            <li>Hosting and files sit in your own accounts, so you own it</li>
+                        </ul>
+                    </article>
+
+                </div>
+
+                <!-- How It Works -->
+                <div class="catalog-steps">
+
+                    <article class="catalog-step">
+                        <p class="catalog-step-number">01</p>
+                        <h3>Send me what you have</h3>
+                        <p>
+                            Price lists, PDFs, spreadsheets, photos. Messy is
+                            fine. You don't need to organize anything first.
+                        </p>
+                    </article>
+
+                    <article class="catalog-step">
+                        <p class="catalog-step-number">02</p>
+                        <h3>I build and organize it</h3>
+                        <p>
+                            Categories, product pages, specs, finishes and a
+                            quote request form, designed to match your
+                            business. You review it and I make changes.
+                        </p>
+                    </article>
+
+                    <article class="catalog-step">
+                        <p class="catalog-step-number">03</p>
+                        <h3>You launch and own it</h3>
+                        <p>
+                            I hand over the logins and files. No subscription
+                            to cancel, nothing holding your site hostage.
+                        </p>
+                    </article>
+
+                </div>
+
+                <!-- What's Included -->
+                <div class="catalog-included">
+
+                    <div class="catalog-included-intro">
+                        <h3>What's included</h3>
+                        <p>
+                            Everything a buyer needs to find a product and
+                            ask for a price.
+                        </p>
+                    </div>
+
+                    <ul class="catalog-included-list">
+                        <li>Browsable categories and product pages</li>
+                        <li>Specs, sizes and finish options per product</li>
+                        <li>Quote request form straight to your inbox</li>
+                        <li>Downloadable spec sheets and price lists</li>
+                        <li>Fast, mobile-friendly design</li>
+                        <li>Full handover of logins, files and code</li>
+                    </ul>
+
+                </div>
+
+                <!-- Who It's For -->
+                <div class="catalog-for">
+
+                    <p class="catalog-for-label">BUILT FOR</p>
+
+                    <div class="project-technologies">
+                        <span>Wholesalers</span>
+                        <span>Distributors</span>
+                        <span>Manufacturers</span>
+                        <span>Trade suppliers</span>
+                        <span>Showrooms</span>
+                        <span>Any business with a product list</span>
+                    </div>
+
+                    <p class="catalog-note">
+                        Need changes later? I can add or update products per
+                        request, or you can choose an optional care plan.
+                        Domain, email and third-party services are quoted
+                        separately.
+                    </p>
+
+                </div>
+
+                <!-- Call To Action -->
+                <div class="catalog-cta">
+
+                    <h3>Send me your product list.</h3>
+
+                    <p>
+                        I'll show you what your catalog could look like.
+                        Free, no-obligation quote.
+                    </p>
+
+                    <a href="#contact" class="btn btn-primary" data-package="catalog">
+                        Request a Free Quote
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
 
                 </div>
 
@@ -904,6 +1055,10 @@
                                     Custom Web Development - Starting at $4,500+
                                 </option>
 
+                                <option value="catalog">
+                                    Catalog Website - Quote on request
+                                </option>
+
                                 <option value="maintenance">
                                     Website Updates &amp; Maintenance
                                 </option>
@@ -994,9 +1149,6 @@
                 </div>
 
             </div>
-
-        </section>
-
 
         </section>
 
@@ -1133,7 +1285,7 @@
 
         document.addEventListener("DOMContentLoaded", () => {
             const packageLinks = document.querySelectorAll(
-                ".pricing-link[data-package]"
+                "[data-package]"
             );
 
             const projectType = document.getElementById("project-type");

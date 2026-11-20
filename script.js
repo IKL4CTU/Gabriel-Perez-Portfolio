@@ -1,4 +1,3 @@
-
 /* ======================================== */
 /* CONTACT FORM SUBMISSION                  */
 /* ======================================== */
@@ -137,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const packageLinks = document.querySelectorAll(
-    ".pricing-link[data-package]"
+    "[data-package]"
   );
 
   const projectType = document.getElementById("project-type");

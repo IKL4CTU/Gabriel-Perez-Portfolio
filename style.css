@@ -1,4 +1,3 @@
-
 /* ======================================== */
 /* GABRIEL J. PEREZ                         */
 /* WEB DESIGN & DEVELOPMENT PORTFOLIO       */
@@ -2290,4 +2289,336 @@ button:focus-visible {
   .pricing-card:hover {
     transform: none;
   }
+}
+
+
+/* ======================================== */
+/* CATALOG WEBSITES SECTION                 */
+/* ======================================== */
+
+.catalog {
+    padding: 120px 32px 130px;
+    background-color: var(--white);
+}
+
+.catalog-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.catalog-intro {
+    max-width: 800px;
+    margin-bottom: 65px;
+}
+
+.catalog-intro h2 {
+    font-size: clamp(2.4rem, 4.5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+
+    color: var(--navy);
+}
+
+.catalog-intro h2 span {
+    display: block;
+    color: var(--accent-blue);
+}
+
+.catalog-description {
+    max-width: 640px;
+    margin-top: 25px;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+
+    color: var(--text-secondary);
+}
+
+
+/* Comparison Cards */
+
+.catalog-compare {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.catalog-card {
+    padding: 40px 36px;
+    border-radius: 10px;
+}
+
+.catalog-card h3 {
+    margin-bottom: 26px;
+
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.catalog-card ul {
+    list-style: none;
+}
+
+.catalog-card li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 16px;
+
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.catalog-card li:last-child {
+    margin-bottom: 0;
+}
+
+.catalog-card li::before {
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+}
+
+.catalog-card-typical {
+    background-color: #E9EDF1;
+    color: var(--text-secondary);
+}
+
+.catalog-card-typical h3 {
+    color: var(--text-secondary);
+}
+
+.catalog-card-typical li::before {
+    content: "\00D7";
+}
+
+.catalog-card-onetime {
+    background-color: var(--navy);
+    border-top: 3px solid var(--champagne);
+    color: var(--text-light);
+}
+
+.catalog-card-onetime h3 {
+    color: var(--white);
+}
+
+.catalog-card-onetime li::before {
+    content: "\2713";
+    color: var(--champagne);
+}
+
+
+/* How It Works */
+
+.catalog-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+
+    margin-top: 90px;
+}
+
+.catalog-step {
+    padding: 36px 30px 40px;
+
+    background-color: var(--ivory);
+    border: 1px solid #E0E5EB;
+    border-radius: 8px;
+}
+
+.catalog-step-number {
+    margin-bottom: 26px;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    color: var(--accent-blue);
+}
+
+.catalog-step h3 {
+    margin-bottom: 14px;
+
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.4;
+
+    color: var(--navy);
+}
+
+.catalog-step > p:last-child {
+    font-size: 0.95rem;
+    line-height: 1.85;
+
+    color: var(--text-secondary);
+}
+
+
+/* What's Included */
+
+.catalog-included {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 60px;
+
+    margin-top: 90px;
+    padding-top: 65px;
+
+    border-top: 1px solid #DCE2E8;
+}
+
+.catalog-included-intro h3 {
+    margin-bottom: 14px;
+
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 700;
+    letter-spacing: -0.8px;
+
+    color: var(--navy);
+}
+
+.catalog-included-intro p {
+    font-size: 1rem;
+    line-height: 1.8;
+
+    color: var(--text-secondary);
+}
+
+.catalog-included-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 32px;
+
+    list-style: none;
+}
+
+.catalog-included-list li {
+    position: relative;
+    padding-left: 30px;
+
+    font-size: 1rem;
+    line-height: 1.6;
+
+    color: var(--text-dark);
+}
+
+.catalog-included-list li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+
+    font-weight: 700;
+    color: var(--accent-blue);
+}
+
+
+/* Who It's For */
+
+.catalog-for {
+    margin-top: 75px;
+}
+
+.catalog-for-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+    color: var(--accent-blue);
+}
+
+.catalog-for .project-technologies {
+    margin-top: 18px;
+}
+
+.catalog-note {
+    max-width: 720px;
+    margin-top: 26px;
+
+    font-size: 0.9rem;
+    line-height: 1.8;
+
+    color: var(--text-secondary);
+}
+
+
+/* Call To Action */
+
+.catalog-cta {
+    max-width: 700px;
+    margin: 90px auto 0;
+    padding-top: 65px;
+
+    border-top: 1px solid #DCE2E8;
+
+    text-align: center;
+}
+
+.catalog-cta h3 {
+    margin-bottom: 16px;
+
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 700;
+    letter-spacing: -0.8px;
+
+    color: var(--navy);
+}
+
+.catalog-cta > p {
+    margin-bottom: 30px;
+
+    font-size: 1rem;
+    line-height: 1.9;
+
+    color: var(--text-secondary);
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .catalog-compare,
+    .catalog-steps,
+    .catalog-included {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-included {
+        gap: 35px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .catalog {
+        padding: 85px 20px 95px;
+    }
+
+    .catalog-intro {
+        margin-bottom: 45px;
+    }
+
+    .catalog-card {
+        padding: 30px 24px;
+    }
+
+    .catalog-steps,
+    .catalog-included {
+        margin-top: 65px;
+    }
+
+    .catalog-included-list {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-cta {
+        margin-top: 65px;
+        padding-top: 45px;
+    }
+
+    .catalog-cta .btn {
+        width: 100%;
+    }
+
 }
