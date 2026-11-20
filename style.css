@@ -2622,3 +2622,226 @@ button:focus-visible {
     }
 
 }
+
+
+/* ======================================== */
+/*  LIVE CATALOG SHOWCASE                   */
+/* ======================================== */
+
+.catalog-showcase {
+    margin-top: 100px;
+    padding-top: 70px;
+    border-top: 1px solid #DCE2E8;
+}
+
+.showcase-intro {
+    max-width: 800px;
+    margin-bottom: 45px;
+}
+
+.showcase-intro h3 {
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    color: var(--navy);
+}
+
+.showcase-intro > p:last-child {
+    max-width: 700px;
+    margin-top: 20px;
+    color: var(--text-secondary);
+    line-height: 1.85;
+}
+
+
+/* SHOWCASE GRID */
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.showcase-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DCE2E8;
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--white);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+.showcase-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--champagne);
+    box-shadow: 0 15px 35px rgba(16, 28, 43, 0.10);
+}
+
+
+/* INDIVIDUAL CATALOG BRANDING */
+
+.showcase-preview {
+    min-height: 210px;
+    padding: 30px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: var(--white);
+}
+
+.showcase-essential {
+    background: linear-gradient(
+        135deg,
+        #151B1D,
+        #394345
+    );
+    border-bottom: 4px solid #B99A62;
+}
+
+.showcase-advanced {
+    background: linear-gradient(
+        135deg,
+        #18352B,
+        #47665A
+    );
+    border-bottom: 4px solid #B47E56;
+}
+
+.showcase-premium {
+    background: linear-gradient(
+        135deg,
+        #101820,
+        #344C5F
+    );
+    border-bottom: 4px solid #F4B41A;
+}
+
+.showcase-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.showcase-essential .showcase-label {
+    color: #B99A62;
+}
+
+.showcase-advanced .showcase-label {
+    color: #DBB99F;
+}
+
+.showcase-premium .showcase-label {
+    color: #F4B41A;
+}
+
+.showcase-preview h4 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.showcase-preview > p:last-child {
+    font-size: 0.82rem;
+    color: #D6DDE3;
+}
+
+
+/* SHOWCASE CONTENT */
+
+.showcase-content {
+    padding: 30px 25px;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.showcase-description {
+    margin: 20px 0 25px;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.showcase-content .pricing-features {
+    flex: 1;
+}
+
+
+/* SHOWCASE ACTIONS */
+
+.showcase-actions {
+    display: grid;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.showcase-actions .btn {
+    width: 100%;
+    background: var(--navy);
+    text-align: center;
+}
+
+.showcase-actions .btn:hover {
+    background: var(--navy-light);
+    color: var(--white);
+}
+
+.showcase-actions .pricing-link {
+    text-align: center;
+}
+
+.showcase-disclaimer {
+    max-width: 850px;
+    margin: 30px auto 0;
+    font-size: 0.8rem;
+    line-height: 1.8;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
+
+    .showcase-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .catalog-showcase {
+        margin-top: 65px;
+        padding-top: 45px;
+    }
+
+    .showcase-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .showcase-preview {
+        min-height: 170px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .showcase-card:hover {
+        transform: none;
+    }
+
+}
