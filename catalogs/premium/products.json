@@ -1,0 +1,203 @@
+
+{
+    "warehouses": [
+        {
+            "id": "west",
+            "name": "West Coast Distribution",
+            "location": "Ontario, California",
+            "code": "WH-01"
+        },
+        {
+            "id": "central",
+            "name": "Central Distribution",
+            "location": "Dallas, Texas",
+            "code": "WH-02"
+        },
+        {
+            "id": "east",
+            "name": "East Coast Distribution",
+            "location": "Atlanta, Georgia",
+            "code": "WH-03"
+        }
+    ],
+    "departments": [
+        {
+            "name": "Circuit Breakers",
+            "code": "CB",
+            "icon": "⚡",
+            "specification": "Current Rating",
+            "variants": ["15 A", "20 A", "25 A", "30 A", "35 A", "40 A", "45 A", "50 A", "60 A", "70 A"],
+            "models": [
+                {"id": "101", "name": "Single Pole Circuit Breaker", "basePrice": 12.50, "detail": "120 V AC"},
+                {"id": "102", "name": "Double Pole Circuit Breaker", "basePrice": 28.75, "detail": "240 V AC"},
+                {"id": "103", "name": "Commercial Thermal Breaker", "basePrice": 42.00, "detail": "240 V AC"},
+                {"id": "104", "name": "Industrial Panel Breaker", "basePrice": 68.50, "detail": "480 V AC"},
+                {"id": "105", "name": "Heavy Duty Breaker", "basePrice": 91.00, "detail": "480 V AC"}
+            ]
+        },
+    
+{
+    "name": "Switches & Receptacles",
+    "code": "SW",
+    "icon": "◉",
+    "specification": "Configuration",
+    "variants": [
+        "White",
+        "Ivory",
+        "Black",
+        "Gray",
+        "Almond",
+        "Brown",
+        "Red",
+        "Blue",
+        "Green",
+        "Stainless"
+    ],
+    "models": [
+        {
+            "id": "101",
+            "name": "Commercial Duplex Receptacle",
+            "basePrice": 5.75,
+            "detail": "15 A / 125 V"
+        },
+        {
+            "id": "102",
+            "name": "Heavy Duty Toggle Switch",
+            "basePrice": 8.20,
+            "detail": "20 A / 120 V"
+        },
+        {
+            "id": "103",
+            "name": "Decorative Rocker Switch",
+            "basePrice": 7.50,
+            "detail": "15 A / 120 V"
+        },
+        {
+            "id": "104",
+            "name": "Commercial GFCI Receptacle",
+            "basePrice": 22.00,
+            "detail": "20 A / 125 V"
+        },
+        {
+            "id": "105",
+            "name": "Hospital Grade Receptacle",
+            "basePrice": 32.00,
+            "detail": "20 A / 125 V"
+        }
+    ]
+},
+
+        {
+            "name": "Wire & Cable",
+            "code": "WR",
+            "icon": "◎",
+            "specification": "Spool Length",
+            "variants": ["25 ft", "50 ft", "75 ft", "100 ft", "125 ft", "150 ft", "200 ft", "250 ft", "500 ft", "1000 ft"],
+            "models": [
+                {"id": "101", "name": "THHN Copper Wire", "basePrice": 12.50, "detail": "12 AWG"},
+                {"id": "102", "name": "THHN Heavy Gauge Wire", "basePrice": 18.50, "detail": "10 AWG"},
+                {"id": "103", "name": "Commercial Control Cable", "basePrice": 24.00, "detail": "16 AWG"},
+                {"id": "104", "name": "Flexible Power Cable", "basePrice": 32.75, "detail": "14 AWG"},
+                {"id": "105", "name": "Equipment Grounding Wire", "basePrice": 15.25, "detail": "12 AWG"}
+            ]
+        },
+        {
+            "name": "Conduit & Fittings",
+            "code": "CF",
+            "icon": "▰",
+            "specification": "Trade Size",
+            "variants": ["1/2 in", "3/4 in", "1 in", "1-1/4 in", "1-1/2 in", "2 in", "2-1/2 in", "3 in", "3-1/2 in", "4 in"],
+            "models": [
+                {"id": "101", "name": "EMT Conduit", "basePrice": 8.50, "detail": "Galvanized steel"},
+                {"id": "102", "name": "EMT Compression Connector", "basePrice": 3.25, "detail": "Steel"},
+                {"id": "103", "name": "Rigid Conduit Coupling", "basePrice": 5.40, "detail": "Galvanized steel"},
+                {"id": "104", "name": "PVC Conduit Elbow", "basePrice": 4.50, "detail": "Schedule 40 PVC"},
+                {"id": "105", "name": "Commercial Conduit Clamp", "basePrice": 2.75, "detail": "Zinc plated steel"}
+            ]
+        },
+        {
+            "name": "Electrical Boxes",
+            "code": "BX",
+            "icon": "▣",
+            "specification": "Size Configuration",
+            "variants": ["3 × 3 × 2 in", "4 × 4 × 2 in", "4 × 4 × 3 in", "5 × 5 × 3 in", "6 × 6 × 3 in", "6 × 6 × 4 in", "8 × 8 × 4 in", "10 × 10 × 4 in", "12 × 12 × 6 in", "16 × 16 × 6 in"],
+            "models": [
+                {"id": "101", "name": "Steel Junction Enclosure", "basePrice": 12.25, "detail": "Steel construction"},
+                {"id": "102", "name": "Weather Resistant Enclosure", "basePrice": 23.00, "detail": "Aluminum"},
+                {"id": "103", "name": "Commercial Pull Box", "basePrice": 19.50, "detail": "Powder coated steel"},
+                {"id": "104", "name": "Industrial Terminal Enclosure", "basePrice": 28.00, "detail": "Steel construction"},
+                {"id": "105", "name": "Non-Metallic Junction Box", "basePrice": 14.75, "detail": "Polycarbonate"}
+            ]
+        },
+        {
+            "name": "Lighting & Fixtures",
+            "code": "LT",
+            "icon": "☀",
+            "specification": "Color Temperature",
+            "variants": ["2700 K", "3000 K", "3200 K", "3500 K", "4000 K", "4200 K", "4500 K", "5000 K", "5700 K", "6500 K"],
+            "models": [
+                {"id": "101", "name": "Commercial LED Panel", "basePrice": 39.50, "detail": "40 W"},
+                {"id": "102", "name": "Industrial High Bay Light", "basePrice": 115.00, "detail": "150 W"},
+                {"id": "103", "name": "LED Linear Fixture", "basePrice": 48.00, "detail": "45 W"},
+                {"id": "104", "name": "Architectural Downlight", "basePrice": 24.00, "detail": "15 W"},
+                {"id": "105", "name": "Exterior LED Wall Pack", "basePrice": 76.50, "detail": "60 W"}
+            ]
+        },
+        {
+            "name": "Transformers",
+            "code": "TF",
+            "icon": "≋",
+            "specification": "Capacity",
+            "variants": ["50 VA", "75 VA", "100 VA", "150 VA", "200 VA", "250 VA", "300 VA", "500 VA", "750 VA", "1000 VA"],
+            "models": [
+                {"id": "101", "name": "Industrial Control Transformer", "basePrice": 65.00, "detail": "120 V to 24 V"},
+                {"id": "102", "name": "Isolation Transformer", "basePrice": 92.00, "detail": "120 V to 120 V"},
+                {"id": "103", "name": "Commercial Step Down Transformer", "basePrice": 79.00, "detail": "240 V to 120 V"},
+                {"id": "104", "name": "Panel Mount Transformer", "basePrice": 58.75, "detail": "240 V to 24 V"},
+                {"id": "105", "name": "Equipment Control Transformer", "basePrice": 85.50, "detail": "480 V to 120 V"}
+            ]
+        },
+        {
+            "name": "Motor Controls",
+            "code": "MC",
+            "icon": "⚙",
+            "specification": "Current Rating",
+            "variants": ["9 A", "12 A", "18 A", "25 A", "32 A", "40 A", "50 A", "65 A", "80 A", "95 A"],
+            "models": [
+                {"id": "101", "name": "Three Pole Contactor", "basePrice": 42.50, "detail": "24 V AC coil"},
+                {"id": "102", "name": "Commercial Motor Contactor", "basePrice": 56.00, "detail": "120 V AC coil"},
+                {"id": "103", "name": "Industrial Motor Starter", "basePrice": 85.00, "detail": "240 V AC coil"},
+                {"id": "104", "name": "Heavy Duty Contactor", "basePrice": 110.00, "detail": "120 V AC coil"},
+                {"id": "105", "name": "Panel Mount Motor Controller", "basePrice": 125.00, "detail": "Three phase"}
+            ]
+        },
+        {
+            "name": "Electrical Tools",
+            "code": "TL",
+            "icon": "⚒",
+            "specification": "Package Quantity",
+            "variants": ["1 unit", "2 units", "3 units", "4 units", "5 units", "6 units", "8 units", "10 units", "12 units", "20 units"],
+            "models": [
+                {"id": "101", "name": "Professional Wire Stripper", "basePrice": 18.50, "detail": "Hand tool"},
+                {"id": "102", "name": "Commercial Cable Cutter", "basePrice": 29.00, "detail": "Hand tool"},
+                {"id": "103", "name": "Precision Crimping Tool", "basePrice": 36.00, "detail": "Hand tool"},
+                {"id": "104", "name": "Electrical Screwdriver Set", "basePrice": 24.50, "detail": "Tool set"},
+                {"id": "105", "name": "Digital Multimeter", "basePrice": 42.50, "detail": "Digital display"}
+            ]
+        },
+        {
+            "name": "Safety Equipment",
+            "code": "SF",
+            "icon": "⬡",
+            "specification": "Package Quantity",
+            "variants": ["1 unit", "2 units", "3 units", "4 units", "5 units", "6 units", "8 units", "10 units", "12 units", "20 units"],
+            "models": [
+                {"id": "101", "name": "Industrial Safety Glasses", "basePrice": 8.50, "detail": "Clear lens"},
+                {"id": "102", "name": "Equipment Identification Tag", "basePrice": 2.50, "detail": "Printed label"},
+                {"id": "103", "name": "Lockout Padlock", "basePrice": 12.50, "detail": "Red body"},
+                {"id": "104", "name": "Safety Warning Sign", "basePrice": 9.75, "detail": "Plastic sign"},
+                {"id": "105", "name": "Lockout Hasp", "basePrice": 7.50, "detail": "Steel construction"}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,978 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta name="description"
+        content="Titan Electrical Supply wholesale distribution catalog.">
+
+    <title>Titan Electrical Supply | Industrial Distribution</title>
+
+    <link rel="stylesheet" href="premium.css">
+
+    <script src="premium.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- GJP DEMONSTRATION BANNER -->
+
+    <div class="demo-banner">
+
+        <a href="../../index.html#catalog">
+            &larr; Return to GJP
+        </a>
+
+        <span>PREMIUM CATALOG DEMONSTRATION</span>
+
+        <a href="../../index.html#contact">
+            Request a Website Like This &rarr;
+        </a>
+
+    </div>
+
+
+    <!-- UTILITY BAR -->
+
+    <div class="utility-bar">
+
+        <span>INDUSTRIAL & COMMERCIAL DISTRIBUTION</span>
+
+        <span id="account-status">
+            Guest Account | Standard Pricing
+        </span>
+
+    </div>
+
+
+    <!-- MAIN HEADER -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="#home" class="brand">
+
+                <span class="brand-mark">&#9889;</span>
+
+                <div>
+
+                    TITAN
+
+                    <small>ELECTRICAL SUPPLY</small>
+
+                </div>
+
+            </a>
+
+            <nav class="navigation" aria-label="Main navigation">
+
+                <a href="#home">Home</a>
+                <a href="#departments">Departments</a>
+                <a href="#catalog">Products</a>
+                <a href="#bulk-order">Quick Order</a>
+                <a href="#warehouse">Warehouse</a>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <button id="open-account"
+                    class="button outline"
+                    type="button">
+
+                    Contractor Portal
+
+                </button>
+
+                <button id="open-cart"
+                    class="button primary"
+                    type="button">
+
+                    Order Cart
+                    <span id="cart-count">0</span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main id="home">
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    POWERING PROFESSIONALS
+                </p>
+
+                <h1>
+
+                    Built for industry.
+
+                    <span>Ready for any project.</span>
+
+                </h1>
+
+                <p class="hero-description">
+
+                    Your source for industrial electrical components,
+                    commercial installations and professional-grade
+                    electrical supplies.
+
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#catalog" class="button primary">
+
+                        Explore Product Catalog &rarr;
+
+                    </a>
+
+                    <a href="#bulk-order" class="button outline">
+
+                        Quick Order by SKU
+
+                    </a>
+
+                    <button class="button outline"
+                        data-dialog="account-modal"
+                        type="button">
+
+                        Explore Contractor Pricing
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATALOG METRICS -->
+
+        <section class="metrics">
+
+            <div>
+
+                <strong id="metric-products">500</strong>
+
+                <span>CATALOG PRODUCTS</span>
+
+            </div>
+
+            <div>
+
+                <strong>10</strong>
+
+                <span>DEPARTMENTS</span>
+
+            </div>
+
+            <div>
+
+                <strong>3</strong>
+
+                <span>DISTRIBUTION CENTERS</span>
+
+            </div>
+
+            <div>
+
+                <strong id="metric-stock">--</strong>
+
+                <span>PRODUCTS IN STOCK</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- DEPARTMENTS -->
+
+        <section id="departments" class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">SHOP BY DEPARTMENT</p>
+
+                    <h2>Everything your project demands.</h2>
+
+                    <p>
+                        Explore our electrical supply departments.
+                    </p>
+
+                </div>
+
+                <div id="department-grid"
+                    class="department-grid">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTRACTOR PRICING PROMOTION -->
+
+        <section class="trade-banner">
+
+            <div class="container trade-layout">
+
+                <div>
+
+                    <p class="eyebrow">
+                        TITAN TRADE PROGRAM
+                    </p>
+
+                    <h2>Built for the professionals.</h2>
+
+                    <p>
+
+                        Experience contractor pricing,
+                        volume discounts and streamlined
+                        commercial purchasing.
+
+                    </p>
+
+                </div>
+
+                <button class="button primary"
+                    data-dialog="account-modal"
+                    type="button">
+
+                    Access Demo Contractor Account &rarr;
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUCT CATALOG -->
+
+        <section id="catalog" class="section catalog-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        INDUSTRIAL PRODUCT LIBRARY
+                    </p>
+
+                    <h2>Electrical Supply Catalog</h2>
+
+                    <p>
+
+                        Search products, review technical
+                        specifications and check simulated
+                        warehouse availability.
+
+                    </p>
+
+                </div>
+
+
+                <div class="catalog-search">
+
+                    <input type="search"
+                        id="product-search"
+                        placeholder="Search SKU, product, category or specification..."
+                        aria-label="Search product catalog">
+
+                    <button id="clear-search"
+                        class="button secondary"
+                        type="button">
+
+                        Clear
+
+                    </button>
+
+                </div>
+
+
+                <div class="catalog-layout">
+
+                    <!-- FILTERS -->
+
+                    <aside class="filter-sidebar">
+
+                        <div class="filter-heading">
+
+                            <h3>Filters</h3>
+
+                            <button id="reset-filters"
+                                class="text-button"
+                                type="button">
+
+                                Reset
+
+                            </button>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <h4>Department</h4>
+
+                            <div id="category-filters"></div>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <h4>Availability</h4>
+
+                            <div id="stock-filters"></div>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <h4>Warehouse</h4>
+
+                            <select id="warehouse-filter"
+                                aria-label="Warehouse filter">
+
+                                <option value="">All Locations</option>
+                                <option value="west">West Coast</option>
+                                <option value="central">Central</option>
+                                <option value="east">East Coast</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <h4>Maximum Unit Price</h4>
+
+                            <input type="range"
+                                id="price-filter"
+                                min="0" max="1000"
+                                step="5" value="1000"
+                                aria-label="Maximum unit price">
+
+                            <p id="price-label">$1,000</p>
+
+                        </div>
+
+                    </aside>
+
+
+                    <!-- RESULTS -->
+
+                    <div class="catalog-results">
+
+                        <div class="results-toolbar">
+
+                            <p id="results-count"
+                                aria-live="polite">
+
+                                Loading catalog...
+
+                            </p>
+
+                            <div class="toolbar-actions">
+
+                                <select id="product-sort"
+                                    aria-label="Sort products">
+
+                                    <option value="default">Featured</option>
+                                    <option value="name">Name: A–Z</option>
+                                    <option value="sku">SKU</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="stock">Highest Availability</option>
+
+                                </select>
+
+                                <button id="grid-view"
+                                    class="view-button active"
+                                    aria-pressed="true"
+                                    type="button">
+
+                                    Grid
+
+                                </button>
+
+                                <button id="list-view"
+                                    class="view-button"
+                                    aria-pressed="false"
+                                    type="button">
+
+                                    List
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <div id="product-grid"
+                            class="product-grid">
+
+                        </div>
+
+                        <div id="empty-state"
+                            class="empty-state" hidden>
+
+                            <h3>No matching products.</h3>
+
+                            <p>Adjust your search or filters.</p>
+
+                            <button id="empty-reset"
+                                class="button primary"
+                                type="button">
+
+                                Reset Filters
+
+                            </button>
+
+                        </div>
+
+                        <nav id="pagination"
+                            class="pagination"
+                            aria-label="Product pages">
+
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BULK ORDER SYSTEM -->
+
+        <section id="bulk-order" class="section">
+
+            <div class="container bulk-layout">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        PROFESSIONAL PROCUREMENT
+                    </p>
+
+                    <h2>Quick Order by SKU</h2>
+
+                    <p>
+
+                        Already know the products you need?
+                        Enter multiple product numbers and
+                        quantities simultaneously.
+
+                    </p>
+
+                    <div class="info-panel">
+
+                        <h3>Supported format</h3>
+
+                        <code>CB-101-01, 10</code>
+
+                        <code>SW-101-01, 25</code>
+
+                        <code>WR-101-01, 5</code>
+
+                        <p>
+
+                            Paste SKU and quantity pairs,
+                            or upload a CSV purchase list.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <form id="bulk-form" class="panel">
+
+                    <h3>Bulk Product Entry</h3>
+
+                    <label for="bulk-input">
+
+                        Product SKU and Quantity
+
+                    </label>
+
+                    <textarea id="bulk-input"
+                        rows="8"
+                        placeholder="CB-101-01, 10&#10;SW-101-01, 25"></textarea>
+
+                    <label for="csv-upload">
+
+                        Import CSV File
+
+                    </label>
+
+                    <input type="file"
+                        id="csv-upload"
+                        accept=".csv,text/csv">
+
+                    <button class="button secondary"
+                        id="download-template"
+                        type="button">
+
+                        Download Sample CSV
+
+                    </button>
+
+                    <button class="button primary"
+                        type="submit">
+
+                        Validate & Add Products
+
+                    </button>
+
+                    <div id="bulk-result"
+                        class="result-panel"
+                        aria-live="polite" hidden>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- WAREHOUSE SYSTEM -->
+
+        <section id="warehouse"
+            class="section warehouse-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        DISTRIBUTION INFRASTRUCTURE
+                    </p>
+
+                    <h2>Warehouse Availability</h2>
+
+                    <p>
+
+                        Demonstration of multi-location
+                        inventory management.
+
+                    </p>
+
+                </div>
+
+                <div id="warehouse-grid"
+                    class="warehouse-grid">
+
+                </div>
+
+                <div class="warehouse-actions">
+
+                    <button id="open-inventory"
+                        class="button primary"
+                        type="button">
+
+                        Open Inventory Management Demo
+
+                    </button>
+
+                    <button id="export-inventory"
+                        class="button outline"
+                        type="button">
+
+                        Export Inventory Report
+
+                    </button>
+
+                </div>
+
+                <p class="warehouse-note">
+
+                    Inventory figures are simulated.
+                    They are not connected to a live ERP system.
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PRODUCT COMPARISON BAR -->
+
+    <div id="compare-bar" class="compare-bar" hidden>
+
+        <div>
+
+            <strong>Product Comparison</strong>
+
+            <p id="compare-count">0 of 3 products selected</p>
+
+        </div>
+
+        <div class="header-actions">
+
+            <button id="clear-compare"
+                class="button outline"
+                type="button">
+
+                Clear
+
+            </button>
+
+            <button id="open-compare"
+                class="button primary"
+                type="button">
+
+                Compare Products
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT DETAILS MODAL -->
+
+    <dialog id="product-modal"
+        aria-label="Product details">
+
+        <button class="modal-close"
+            data-close="product-modal"
+            aria-label="Close"
+            type="button">&times;</button>
+
+        <div id="product-details"></div>
+
+    </dialog>
+
+
+    <!-- CONTRACTOR ACCOUNT MODAL -->
+
+    <dialog id="account-modal"
+        aria-labelledby="account-title">
+
+        <button class="modal-close"
+            data-close="account-modal"
+            aria-label="Close"
+            type="button">&times;</button>
+
+        <p class="eyebrow">TITAN TRADE PROGRAM</p>
+
+        <h2 id="account-title">Contractor Portal</h2>
+
+        <p>
+
+            Switch account types to experience
+            dynamic wholesale pricing.
+
+        </p>
+
+        <div class="account-options">
+
+            <button class="account-option"
+                data-account="guest"
+                type="button">
+
+                <strong>Standard Account</strong>
+
+                <span>Standard catalog pricing</span>
+
+            </button>
+
+            <button class="account-option"
+                data-account="contractor"
+                type="button">
+
+                <strong>Contractor Account</strong>
+
+                <span>15% preferred pricing</span>
+
+            </button>
+
+            <button class="account-option"
+                data-account="distributor"
+                type="button">
+
+                <strong>Distributor Account</strong>
+
+                <span>25% preferred pricing</span>
+
+            </button>
+
+        </div>
+
+        <p class="demo-note">
+
+            This demonstration does not require credentials.
+            Account selection simulates customer-specific pricing.
+
+        </p>
+
+    </dialog>
+
+
+    <!-- PRODUCT COMPARISON MODAL -->
+
+    <dialog id="compare-modal"
+        class="wide-modal"
+        aria-labelledby="compare-title">
+
+        <button class="modal-close"
+            data-close="compare-modal"
+            aria-label="Close"
+            type="button">&times;</button>
+
+        <h2 id="compare-title">Product Comparison</h2>
+
+        <div id="compare-content"></div>
+
+    </dialog>
+
+
+    <!-- ORDER CART -->
+
+    <dialog id="cart-modal"
+        class="wide-modal"
+        aria-labelledby="cart-title">
+
+        <button class="modal-close"
+            data-close="cart-modal"
+            aria-label="Close"
+            type="button">&times;</button>
+
+        <h2 id="cart-title">Commercial Order Cart</h2>
+
+        <p id="cart-account"></p>
+
+        <div id="cart-items"></div>
+
+        <div id="cart-summary"></div>
+
+        <form id="order-form" class="panel order-form">
+
+            <h3>Request a Commercial Order</h3>
+
+            <label for="customer-name">Contact Name</label>
+
+            <input id="customer-name" required>
+
+            <label for="customer-company">Company</label>
+
+            <input id="customer-company" required>
+
+            <label for="customer-email">Email</label>
+
+            <input type="email"
+                id="customer-email" required>
+
+            <label for="purchase-order">
+
+                Purchase Order Reference
+
+            </label>
+
+            <input id="purchase-order">
+
+            <label for="customer-notes">
+
+                Project Notes
+
+            </label>
+
+            <textarea id="customer-notes" rows="3"></textarea>
+
+            <button id="export-quote"
+                class="button secondary"
+                type="button">
+
+                Download Quote CSV
+
+            </button>
+
+            <button class="button primary"
+                type="submit">
+
+                Preview Commercial Order
+
+            </button>
+
+            <p class="demo-note">
+
+                No payment is collected.
+                No order or personal information is transmitted.
+
+            </p>
+
+        </form>
+
+        <div id="order-confirmation"
+            class="result-panel"
+            aria-live="polite" hidden>
+
+        </div>
+
+    </dialog>
+
+
+    <!-- INVENTORY MANAGEMENT -->
+
+    <dialog id="inventory-modal"
+        class="wide-modal"
+        aria-labelledby="inventory-title">
+
+        <button class="modal-close"
+            data-close="inventory-modal"
+            aria-label="Close"
+            type="button">&times;</button>
+
+        <p class="eyebrow">ADMINISTRATION DEMONSTRATION</p>
+
+        <h2 id="inventory-title">Inventory Management</h2>
+
+        <p>
+
+            Modify sample inventory quantities and see the
+            catalog availability update immediately.
+
+        </p>
+
+        <div class="catalog-search">
+
+            <input type="search"
+                id="inventory-search"
+                placeholder="Search inventory by name or SKU..."
+                aria-label="Search inventory">
+
+            <button id="reset-inventory"
+                class="button secondary"
+                type="button">
+
+                Restore Sample Inventory
+
+            </button>
+
+        </div>
+
+        <div id="inventory-table"></div>
+
+        <p class="demo-note">
+
+            Changes are temporary and reset when the page reloads.
+
+        </p>
+
+    </dialog>
+
+
+    <!-- NOTIFICATION -->
+
+    <div id="toast" class="toast"
+        role="status" hidden></div>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <h3>TITAN ELECTRICAL SUPPLY</h3>
+
+                <p>
+
+                    Industrial products.
+                    Professional distribution.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>PRODUCTS</h4>
+
+                <a href="#departments">Departments</a>
+                <a href="#catalog">Product Catalog</a>
+                <a href="#bulk-order">Quick Order</a>
+
+            </div>
+
+            <div>
+
+                <h4>TRADE SERVICES</h4>
+
+                <a href="#warehouse">Distribution Centers</a>
+
+                <button class="footer-button"
+                    data-dialog="account-modal"
+                    type="button">
+
+                    Contractor Portal
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+
+            <p>
+
+                Fictional business. Sample prices, inventory
+                and technical specifications are illustrative only.
+
+            </p>
+
+            <p>
+
+                Designed &amp; Developed by
+
+                <a href="../../index.html">
+
+                    GJP Web Design &amp; Development
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
