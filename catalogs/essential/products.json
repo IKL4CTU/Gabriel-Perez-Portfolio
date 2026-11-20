@@ -1,0 +1,192 @@
+
+{
+    "finishes": [
+        {
+            "name": "Matte Black",
+            "code": "MB",
+            "color": "#343434"
+        },
+        {
+            "name": "Brushed Nickel",
+            "code": "BN",
+            "color": "#B5B5AC"
+        },
+        {
+            "name": "Brushed Brass",
+            "code": "BB",
+            "color": "#B99A62"
+        },
+        {
+            "name": "Polished Chrome",
+            "code": "PC",
+            "color": "#D8DDE2"
+        },
+        {
+            "name": "Oil-Rubbed Bronze",
+            "code": "ORB",
+            "color": "#574035"
+        }
+    ],
+    "models": [
+        {
+            "id": "CP101",
+            "name": "Modern Bar Pull",
+            "category": "Cabinet Pulls",
+            "material": "Stainless Steel",
+            "size": "128 mm",
+            "image": "bar-pull"
+        },
+        {
+            "id": "CP102",
+            "name": "Contemporary Slim Pull",
+            "category": "Cabinet Pulls",
+            "material": "Aluminum",
+            "size": "160 mm",
+            "image": "slim-pull"
+        },
+        {
+            "id": "CP103",
+            "name": "Classic Arch Pull",
+            "category": "Cabinet Pulls",
+            "material": "Zinc Alloy",
+            "size": "96 mm",
+            "image": "arch-pull"
+        },
+        {
+            "id": "CP104",
+            "name": "Industrial Square Pull",
+            "category": "Cabinet Pulls",
+            "material": "Stainless Steel",
+            "size": "192 mm",
+            "image": "square-pull"
+        },
+        {
+            "id": "CK201",
+            "name": "Classic Round Knob",
+            "category": "Cabinet Knobs",
+            "material": "Zinc Alloy",
+            "size": "30 mm",
+            "image": "round-knob"
+        },
+        {
+            "id": "CK202",
+            "name": "Modern Square Knob",
+            "category": "Cabinet Knobs",
+            "material": "Solid Brass",
+            "size": "32 mm",
+            "image": "square-knob"
+        },
+        {
+            "id": "CK203",
+            "name": "Traditional Mushroom Knob",
+            "category": "Cabinet Knobs",
+            "material": "Solid Brass",
+            "size": "35 mm",
+            "image": "mushroom-knob"
+        },
+        {
+            "id": "CK204",
+            "name": "Contemporary T-Bar Knob",
+            "category": "Cabinet Knobs",
+            "material": "Stainless Steel",
+            "size": "50 mm",
+            "image": "tbar-knob"
+        },
+        {
+            "id": "CH301",
+            "name": "Decorative Overlay Hinge",
+            "category": "Cabinet Hinges",
+            "material": "Steel",
+            "size": "50 mm",
+            "image": "overlay-hinge"
+        },
+        {
+            "id": "CH302",
+            "name": "Traditional Butt Hinge",
+            "category": "Cabinet Hinges",
+            "material": "Solid Brass",
+            "size": "38 mm",
+            "image": "butt-hinge"
+        },
+        {
+            "id": "CH303",
+            "name": "Decorative Inset Hinge",
+            "category": "Cabinet Hinges",
+            "material": "Steel",
+            "size": "60 mm",
+            "image": "inset-hinge"
+        },
+        {
+            "id": "CH304",
+            "name": "Surface Mount Hinge",
+            "category": "Cabinet Hinges",
+            "material": "Steel",
+            "size": "75 mm",
+            "image": "surface-hinge"
+        },
+        {
+            "id": "EP401",
+            "name": "Minimalist Edge Pull",
+            "category": "Edge Pulls",
+            "material": "Aluminum",
+            "size": "100 mm",
+            "image": "edge-pull"
+        },
+        {
+            "id": "EP402",
+            "name": "Extended Finger Pull",
+            "category": "Edge Pulls",
+            "material": "Aluminum",
+            "size": "150 mm",
+            "image": "finger-pull"
+        },
+        {
+            "id": "EP403",
+            "name": "Recessed Flush Pull",
+            "category": "Edge Pulls",
+            "material": "Stainless Steel",
+            "size": "80 mm",
+            "image": "flush-pull"
+        },
+        {
+            "id": "EP404",
+            "name": "Architectural Tab Pull",
+            "category": "Edge Pulls",
+            "material": "Solid Brass",
+            "size": "60 mm",
+            "image": "tab-pull"
+        },
+        {
+            "id": "DA501",
+            "name": "Decorative Cabinet Hook",
+            "category": "Cabinet Accessories",
+            "material": "Zinc Alloy",
+            "size": "45 mm",
+            "image": "cabinet-hook"
+        },
+        {
+            "id": "DA502",
+            "name": "Traditional Cup Pull",
+            "category": "Cabinet Accessories",
+            "material": "Solid Brass",
+            "size": "76 mm",
+            "image": "cup-pull"
+        },
+        {
+            "id": "DA503",
+            "name": "Decorative Backplate",
+            "category": "Cabinet Accessories",
+            "material": "Steel",
+            "size": "120 mm",
+            "image": "backplate"
+        },
+        {
+            "id": "DA504",
+            "name": "Cabinet Ring Pull",
+            "category": "Cabinet Accessories",
+            "material": "Solid Brass",
+            "size": "48 mm",
+            "image": "ring-pull"
+        }
+    ]
+}

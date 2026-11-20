@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Pacific Cabinet Hardware. Explore our cabinet pulls,
+        knobs, hinges and functional cabinet hardware.">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Pacific Cabinet Hardware | Product Catalog</title>
+
+    <link rel="stylesheet" href="essential.css">
+
+    <script src="essential.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- ======================================== -->
+    <!-- GJP DEMONSTRATION BANNER                 -->
+    <!-- ======================================== -->
+
+    <div class="demo-banner">
+
+        <a href="../../index.html#catalog">
+            &larr; Return to GJP
+        </a>
+
+        <span>
+            ESSENTIAL CATALOG DEMONSTRATION
+        </span>
+
+        <a href="../../index.html#contact">
+            Request a Website Like This &rarr;
+        </a>
+
+    </div>
+
+
+    <!-- ======================================== -->
+    <!-- WEBSITE HEADER                           -->
+    <!-- ======================================== -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="#" class="brand">
+
+                <span class="brand-mark">P</span>
+
+                <div class="brand-name">
+                    PACIFIC
+                    <small>CABINET HARDWARE</small>
+                </div>
+
+            </a>
+
+            <nav class="navigation"
+                aria-label="Main navigation">
+
+                <a href="#">Home</a>
+                <a href="#catalog">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+            <button class="quote-button"
+                id="open-quote" type="button">
+
+                Quote List
+                <span id="quote-count">0</span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ======================================== -->
+    <!-- MAIN CONTENT                             -->
+    <!-- ======================================== -->
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <div class="hero-container">
+
+                <p class="eyebrow">
+                    HARDWARE BUILT FOR PROFESSIONALS
+                </p>
+
+                <h1>
+                    Details make
+                    <span>the difference.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore our collection of quality cabinet
+                    hardware designed for contractors,
+                    cabinetmakers, retailers and distributors.
+                </p>
+
+                <a href="#catalog" class="button button-primary">
+                    Browse Our Catalog &rarr;
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- BUSINESS HIGHLIGHTS -->
+
+        <section class="business-highlights"
+            aria-label="Business highlights">
+
+            <div>
+                <strong>100+</strong>
+                <span>Product Selections</span>
+            </div>
+
+            <div>
+                <strong>5</strong>
+                <span>Product Categories</span>
+            </div>
+
+            <div>
+                <strong>Trade</strong>
+                <span>Wholesale Solutions</span>
+            </div>
+
+            <div>
+                <strong>Nationwide</strong>
+                <span>Distribution</span>
+            </div>
+
+        </section>
+
+
+        <!-- ======================================== -->
+        <!-- PRODUCT CATALOG                          -->
+        <!-- ======================================== -->
+
+        <section id="catalog" class="catalog-section">
+
+            <div class="catalog-container">
+
+                <div class="section-intro">
+
+                    <p class="eyebrow">OUR COLLECTION</p>
+
+                    <h2>Product Catalog</h2>
+
+                    <p>
+                        Find the right hardware for your next project.
+                        Browse by category, finish or product number.
+                    </p>
+
+                </div>
+
+
+                <!-- CATALOG SEARCH -->
+
+                <div class="search-container">
+
+                    <input type="search"
+                        id="product-search"
+                        placeholder="Search products by name or SKU..."
+                        aria-label="Search products">
+
+                    <button id="clear-search"
+                        type="button">
+
+                        Clear
+
+                    </button>
+
+                </div>
+
+
+                <!-- CATALOG LAYOUT -->
+
+                <div class="catalog-layout">
+
+
+                    <!-- FILTER SIDEBAR -->
+
+                    <aside class="catalog-sidebar">
+
+                        <div class="filter-heading">
+
+                            <h3>Filters</h3>
+
+                            <button id="reset-filters"
+                                type="button">
+
+                                Reset All
+
+                            </button>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <h4>Categories</h4>
+
+                            <div id="category-filters"></div>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <h4>Finish</h4>
+
+                            <div id="finish-filters"></div>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <h4>Material</h4>
+
+                            <div id="material-filters"></div>
+
+                        </div>
+
+                    </aside>
+
+
+                    <!-- PRODUCT RESULTS -->
+
+                    <div class="catalog-results">
+
+                        <div class="results-toolbar">
+
+                            <p id="results-count"
+                                aria-live="polite">
+                                Loading products...
+                            </p>
+
+                            <label for="product-sort"
+                                class="sr-only">
+
+                                Sort products
+
+                            </label>
+
+                            <select id="product-sort">
+
+                                <option value="default">
+                                    Featured
+                                </option>
+
+                                <option value="name-asc">
+                                    Name: A–Z
+                                </option>
+
+                                <option value="name-desc">
+                                    Name: Z–A
+                                </option>
+
+                                <option value="sku">
+                                    Product Number
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Dynamic Product Cards -->
+
+                        <div id="product-grid"
+                            class="product-grid">
+
+                        </div>
+
+
+                        <!-- Empty Results -->
+
+                        <div id="empty-state"
+                            class="empty-state" hidden>
+
+                            <h3>No products found.</h3>
+
+                            <p>
+                                Try adjusting your search or filters.
+                            </p>
+
+                            <button id="empty-reset"
+                                class="button button-primary"
+                                type="button">
+
+                                Clear Filters
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Pagination -->
+
+                        <nav id="pagination"
+                            class="pagination"
+                            aria-label="Catalog pages">
+
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================== -->
+        <!-- ABOUT SECTION                            -->
+        <!-- ======================================== -->
+
+        <section id="about" class="about-section">
+
+            <div class="about-container">
+
+                <p class="eyebrow">ABOUT PACIFIC</p>
+
+                <h2>
+                    Your partner in quality hardware.
+                </h2>
+
+                <p>
+                    Pacific Cabinet Hardware is a fictional
+                    wholesale supplier created to demonstrate
+                    how a professional digital catalog can help
+                    businesses showcase their products, simplify
+                    customer inquiries and serve trade professionals.
+                </p>
+
+                <a href="#catalog"
+                    class="button button-primary">
+
+                    Explore Our Products
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================== -->
+        <!-- CONTACT SECTION                          -->
+        <!-- ======================================== -->
+
+        <section id="contact" class="contact-section">
+
+            <div class="contact-container">
+
+                <p class="eyebrow">LET'S TALK HARDWARE</p>
+
+                <h2>Working on your next project?</h2>
+
+                <p>
+                    Browse our collection, build your product
+                    list and request a personalized wholesale quote.
+                </p>
+
+                <a href="#catalog"
+                    class="button button-primary">
+
+                    Browse Products &rarr;
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ======================================== -->
+    <!-- PRODUCT DETAILS MODAL                    -->
+    <!-- ======================================== -->
+
+    <dialog id="product-modal" class="product-modal">
+
+        <button class="modal-close"
+            id="close-product"
+            type="button"
+            aria-label="Close product details">
+
+            &times;
+
+        </button>
+
+        <div id="product-modal-content"></div>
+
+    </dialog>
+
+
+    <!-- ======================================== -->
+    <!-- QUOTE LIST MODAL                         -->
+    <!-- ======================================== -->
+
+    <dialog id="quote-modal" class="quote-modal">
+
+        <button class="modal-close"
+            id="close-quote"
+            type="button"
+            aria-label="Close quote list">
+
+            &times;
+
+        </button>
+
+        <h2>Your Quote List</h2>
+
+        <p>
+            Review the products you're interested in.
+        </p>
+
+        <div id="quote-items"></div>
+
+        <form id="quote-form">
+
+            <h3>Request a Quote</h3>
+
+            <label for="quote-name">Full Name</label>
+
+            <input type="text"
+                id="quote-name"
+                name="name" required>
+
+            <label for="quote-company">Company</label>
+
+            <input type="text"
+                id="quote-company"
+                name="company" required>
+
+            <label for="quote-email">Email Address</label>
+
+            <input type="email"
+                id="quote-email"
+                name="email" required>
+
+            <label for="quote-notes">Additional Information</label>
+
+            <textarea id="quote-notes"
+                name="notes" rows="4"></textarea>
+
+            <button type="submit"
+                class="button button-primary">
+
+                Preview Quote Request
+
+            </button>
+
+            <small>
+                Demonstration only. No information is transmitted.
+            </small>
+
+        </form>
+
+        <div id="quote-confirmation"
+            aria-live="polite" hidden>
+
+        </div>
+
+    </dialog>
+
+
+    <!-- ======================================== -->
+    <!-- FOOTER                                   -->
+    <!-- ======================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div>
+
+                <h3>Pacific Cabinet Hardware</h3>
+
+                <p>Quality hardware. Professional solutions.</p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#catalog">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                Fictional business and products for demonstration purposes.
+            </p>
+
+            <p>
+                Designed &amp; Developed by
+
+                <a href="../../index.html">
+                    GJP Web Design &amp; Development
+                </a>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
