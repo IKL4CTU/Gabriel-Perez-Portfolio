@@ -2196,8 +2196,9 @@ button:focus-visible {
   margin-bottom: 14px;
 }
 
-.pricing-custom > div:first-child > p:last-child {
-  color: #b7c3d3;
+.pricing-custom > div:first-child > p:not(.pricing-label),
+.pricing-custom .pricing-features li {
+  color: #d6deea;
   line-height: 1.8;
   max-width: 620px;
 }
